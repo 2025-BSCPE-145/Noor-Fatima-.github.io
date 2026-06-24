@@ -17,7 +17,7 @@
     <meta property="og:type" content="website" />
 
     <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
 
     <link rel="stylesheet" href="style.css" />
 </head>
@@ -26,100 +26,166 @@
 
     <!-- NAVBAR -->
     <nav class="navbar">
-        <div class="logo">
-            <a href="index.html">Noor.dev</a>
-        </div>
-        <div class="nav-links">
-            <a href="index.html" class="active">Home</a>
-            <a href="about.html">About</a>
-            <a href="projects.html">Projects</a>
-            <a href="blog.html">Blog</a>
-            <a href="contact.html">Contact</a>
-        </div>
+        <div class="logo">Noor.</div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Work</a></li>
+            <li><a href="blog.html">Writings</a></li>
+            <li><a href="contact.html" class="nav-cta">Let's Talk</a></li>
+        </ul>
+        <button class="hamburger" aria-label="Toggle menu">☰</button>
     </nav>
 
     <!-- HERO SECTION -->
-    <header class="hero">
-        <h1>Welcome to My Portfolio Website</h1>
-        <h2>Hi, I'm Noor 👋</h2>
-        <p>
-            Computer Engineering student at UET Lahore, Faisalabad Campus.
-            I share my learning journey, projects, and academic growth here.
-        </p>
-        <p>
-            Inspired by my professor <b>Dr. Bilal Ahmad</b>, this website represents my
-            progress as a future engineer and continuous learning path.
-        </p>
-        <div class="hero-buttons">
-            <a href="projects.html" class="btn">View Projects</a>
-            <a href="blog.html" class="btn btn-outline">Read Blog</a>
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-text">
+                <span class="badge">🚀 Computer Engineering Student</span>
+                <h1>Hi, I'm <span class="gradient-text">Noor</span></h1>
+                <p class="subtitle">
+                    I build things that <span class="highlight">solve real problems</span>.
+                    Currently exploring the intersection of <strong>AI</strong>,
+                    <strong>databases</strong>, and <strong>web development</strong>.
+                </p>
+                <div class="hero-buttons">
+                    <a href="projects.html" class="btn-primary">See My Work →</a>
+                    <a href="about.html" class="btn-secondary">About Me</a>
+                </div>
+                <div class="stats">
+                    <div><span>3+</span> Projects</div>
+                    <div><span>UET</span> Lahore</div>
+                    <div><span>2025</span> Batch</div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="code-block">
+                    <div class="dots">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <pre><code><span class="code-blue">const</span> <span class="code-yellow">noor</span> = {<br>  <span class="code-blue">name</span>: <span class="code-green">"Noor"</span>,<br>  <span class="code-blue">major</span>: <span class="code-green">"Computer Engineering"</span>,<br>  <span class="code-blue">university</span>: <span class="code-green">"UET Lahore"</span>,<br>  <span class="code-blue">goal</span>: <span class="code-green">"Build the future"</span><br>};</code></pre>
+                </div>
+            </div>
         </div>
-    </header>
+    </section>
 
-    <!-- CONTENT GRID -->
-    <main class="container">
+    <!-- FEATURED PROJECT -->
+    <section class="featured">
+        <div class="container">
+            <span class="section-label">⭐ Featured Project</span>
+            <h2>Student Database Management System</h2>
+            <div class="featured-grid">
+                <div class="featured-content">
+                    <p>
+                        A production-ready database system built for managing student records,
+                        course enrollments, and academic data. Designed with <strong>MySQL</strong>
+                        and <strong>Python</strong>.
+                    </p>
+                    <ul class="feature-list">
+                        <li>✅ CRUD operations with CLI interface</li>
+                        <li>✅ Complex JOINs & subqueries</li>
+                        <li>✅ 3NF normalized schema</li>
+                    </ul>
+                    <div class="tech-stack">
+                        <span>Python</span>
+                        <span>MySQL</span>
+                        <span>SQLAlchemy</span>
+                    </div>
+                    <a href="projects.html" class="btn-primary">View on GitHub →</a>
+                </div>
+                <div class="featured-preview">
+                    <div class="mockup">
+                        <div class="mockup-header">
+                            <span>⚡ Query Result</span>
+                        </div>
+                        <div class="mockup-body">
+                            <div class="row">
+                                <span class="key">Student</span>
+                                <span class="value">Ahmed</span>
+                            </div>
+                            <div class="row">
+                                <span class="key">Course</span>
+                                <span class="value">Database Systems</span>
+                            </div>
+                            <div class="row">
+                                <span class="key">Grade</span>
+                                <span class="value highlight">A</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <!-- ✅ UPDATED: Featured Project -->
-        <section class="card highlight">
-            <h2>⭐ Featured Project</h2>
-            <h3>Student Database Management System</h3>
-            <p>
-                A <b>MySQL</b> database system for managing student records, courses, and enrollments.
-                Built as part of my Database Systems course.
-            </p>
-            <ul>
-                <li>✅ CRUD operations (Create, Read, Update, Delete)</li>
-                <li>✅ Complex SQL queries (JOINs, subqueries, aggregations)</li>
-                <li>✅ Python CLI interface for interaction</li>
-            </ul>
-            <p><b>Tech:</b> Python, MySQL, SQLAlchemy</p>
-            <a href="projects.html" class="btn" style="margin-top: 10px;">🔗 View on GitHub</a>
-        </section>
+    <!-- BLOG PREVIEW -->
+    <section class="blog-preview">
+        <div class="container">
+            <span class="section-label">📝 Latest Writing</span>
+            <div class="blog-card">
+                <div class="blog-meta">
+                    <span>June 20, 2026</span>
+                    <span>•</span>
+                    <span>3 min read</span>
+                </div>
+                <h3>What I Learned Building My First Database Project</h3>
+                <p>
+                    Designing a relational database from scratch taught me more than any textbook.
+                    Here are the 5 lessons that stuck with me...
+                </p>
+                <a href="blog.html" class="read-link">Read More →</a>
+            </div>
+        </div>
+    </section>
 
-        <!-- ✅ UPDATED: Recent Blog Post -->
-        <section class="card">
-            <h2>📝 Latest Blog Post</h2>
-            <h3>What I Learned Building My First Database Project</h3>
-            <p>
-                <small>📅 Published: June 20, 2026</small>
-            </p>
-            <p>
-                Designing my first relational database taught me the importance of
-                <b>normalization</b>, <b>foreign keys</b>, and <b>transaction management</b>.
-                I also discovered that writing clean SQL queries is an art!
-            </p>
-            <a href="blog.html">Read full post →</a>
-        </section>
-
-        <!-- ✅ UPDATED: Skills with Context -->
-        <section class="card">
-            <h2>🛠️ Skills & Tools</h2>
-            <ul>
-                <li><b>Languages:</b> Python, C++, JavaScript, SQL</li>
-                <li><b>Databases:</b> MySQL, SQLite, PostgreSQL</li>
-                <li><b>Web:</b> HTML, CSS, GitHub Pages</li>
-                <li><b>Concepts:</b> OOP, Data Structures, DBMS</li>
-            </ul>
-        </section>
-
-        <!-- ✅ UPDATED: What's Next -->
-        <section class="card highlight">
-            <h2>🚀 Coming Up Next</h2>
-            <ul>
-                <li>📊 <b>Data Visualization Dashboard</b> using Python & Matplotlib</li>
-                <li>🌐 <b>Personal Blog</b> with weekly learning updates</li>
-                <li>🤖 <b>Intro to Machine Learning</b> – First ML model</li>
-            </ul>
-        </section>
-
-    </main>
+    <!-- CTA SECTION -->
+    <section class="cta">
+        <div class="container">
+            <h2>Let's Build Something <span class="gradient-text">Together</span></h2>
+            <p>I'm always open to new ideas, collaborations, or just a chat.</p>
+            <a href="contact.html" class="btn-primary">Get in Touch →</a>
+        </div>
+    </section>
 
     <!-- FOOTER -->
-    <footer class="footer">
-        <p>© 2026 Noor | Computer Engineering Student</p>
-        <p>UET Lahore, Faisalabad Campus</p>
-        <p>Built with HTML, CSS & GitHub Pages 🚀</p>
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3>Noor.</h3>
+                    <p>Building the future, one line of code at a time.</p>
+                </div>
+                <div>
+                    <h4>Navigate</h4>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="projects.html">Work</a>
+                    <a href="blog.html">Writings</a>
+                </div>
+                <div>
+                    <h4>Connect</h4>
+                    <a href="#">GitHub</a>
+                    <a href="#">LinkedIn</a>
+                    <a href="#">Email</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Noor. Crafted with ☕ and ❤️</p>
+            </div>
+        </div>
     </footer>
+
+    <!-- Mobile Menu Toggle -->
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('open');
+        });
+    </script>
 
 </body>
 </html>
