@@ -1,138 +1,258 @@
-```html id="m8t2kp"
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>What I Learned from Database Systems | Noor</title>
-    <link rel="stylesheet" href="../style.css">
+
+    <!-- SEO -->
+    <meta name="description" content="What I learned from Database Systems as a Computer Engineering student." />
+    <meta name="keywords" content="Noor, Database Systems, SQL, MySQL, Computer Engineering, UET Faisalabad" />
+    <meta name="author" content="Noor" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="What I Learned from Database Systems | Noor" />
+    <meta property="og:description" content="Understanding SQL, relational databases, and data organization concepts." />
+    <meta property="og:type" content="article" />
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="../style.css" />
 </head>
+
 <body>
 
-    <nav>
-        <a href="../index.html">Home</a>
-        <a href="../about.html">About</a>
-        <a href="../projects.html">Projects</a>
-        <a href="../blog.html">Blog</a>
-        <a href="../contact.html">Contact</a>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">Noor.</div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../projects.html">Work</a></li>
+            <li><a href="../blog.html" class="active">Writings</a></li>
+            <li><a href="../contact.html" class="nav-cta">Let's Talk</a></li>
+        </ul>
+        <button class="hamburger" aria-label="Toggle menu">☰</button>
     </nav>
 
-    <article>
-        <h1>What I Learned from Database Systems</h1>
+    <!-- BLOG POST HERO -->
+    <section class="hero" style="padding: 60px 20px 40px;">
+        <div class="hero-container" style="grid-template-columns: 1fr; text-align: center; max-width: 800px;">
+            <div class="hero-text">
+                <span class="badge">📝 Blog Post</span>
+                <h1 style="font-size: 2.8rem;">What I Learned from <span class="gradient-text">Database Systems</span></h1>
+                <div class="blog-meta" style="justify-content: center; margin: 15px 0;">
+                    <span>📅 June 12, 2026</span>
+                    <span>•</span>
+                    <span>⏱️ 5 min read</span>
+                    <span>•</span>
+                    <span>🏷️ Databases</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <p>
-            Database Systems was one of the most interesting and
-            practical courses that I studied during my Computer
-            Engineering degree. Before taking this course, I used to
-            think that data was simply information stored inside files.
-            However, this course completely changed my understanding and
-            showed me how important databases are in modern technology.
-        </p>
+    <!-- BLOG CONTENT -->
+    <section style="padding: 20px 0 60px;">
+        <div class="container" style="max-width: 750px;">
 
-        <p>
-            Almost every application that we use today depends on a
-            database. Social media platforms, banking systems, online
-            shopping websites, hospitals, and universities all rely on
-            databases to store and manage information efficiently.
-            Learning this made me realize that databases are one of the
-            foundations of computer science and software engineering.
-        </p>
+            <!-- Introduction -->
+            <p style="font-size: 1.2rem; color: #c0c0c0; line-height: 1.8; margin-bottom: 25px;">
+                <strong>Database Systems</strong> was one of the most interesting and practical courses that I
+                studied during my Computer Engineering degree. Before taking this course, I used to think that
+                data was simply information stored inside files.
+            </p>
 
-        <p>
-            At the beginning of the course, we learned about the basic
-            concepts of databases and database management systems. I was
-            introduced to tables, rows, columns, primary keys, and
-            relationships between different entities. These concepts
-            seemed simple at first, but they became very important when
-            we started designing our own databases.
-        </p>
+            <p style="color: #a0a0a0; line-height: 1.8; margin-bottom: 20px;">
+                However, this course completely changed my understanding and showed me how important databases
+                are in modern technology.
+            </p>
 
-        <p>
-            One of my favorite topics was the Entity Relationship (ER)
-            Diagram. Designing ER diagrams taught me how to analyze a
-            real-world problem and convert it into a structured database
-            model. It was interesting to see how entities, attributes,
-            and relationships could represent complex systems in an
-            organized way.
-        </p>
+            <!-- Section 1 -->
+            <h2 style="color: #fff; margin: 35px 0 15px;">🌐 The Foundation of Modern Tech</h2>
+            <p style="color: #a0a0a0; line-height: 1.8; margin-bottom: 20px;">
+                Almost every application that we use today depends on a database.
+                <strong>Social media platforms, banking systems, online shopping websites, hospitals, and
+                universities</strong> all rely on databases to store and manage information efficiently.
+            </p>
+            <p style="color: #a0a0a0; line-height: 1.8; margin-bottom: 20px;">
+                Learning this made me realize that databases are one of the foundations of computer science
+                and software engineering.
+            </p>
 
-        <p>
-            Another important topic was normalization. At first,
-            normalization looked difficult because there were many rules
-            and forms to remember. After practicing several examples, I
-            understood its purpose. Normalization helps reduce
-            redundancy, improve data consistency, and make databases
-            more efficient. It showed me the importance of good database
-            design.
-        </p>
+            <!-- Blockquote -->
+            <blockquote style="border-left: 4px solid #6C63FF; padding: 15px 20px; margin: 25px 0; background: #1a1a1a; border-radius: 8px;">
+                <p style="color: #e5e5e5; font-style: italic; font-size: 1.05rem;">
+                    "Data is the new oil. A well-designed database is the engine that powers modern applications."
+                </p>
+            </blockquote>
 
-        <p>
-            The most exciting part of the course was learning SQL,
-            which stands for Structured Query Language. Writing SQL
-            queries made me feel like I was communicating directly with
-            the database. I learned how to create tables, insert data,
-            update records, delete information, and retrieve specific
-            data using different queries.
-        </p>
+            <!-- Section 2 -->
+            <h2 style="color: #fff; margin: 35px 0 15px;">📊 Understanding the Basics</h2>
+            <p style="color: #a0a0a0; line-height: 1.8; margin-bottom: 20px;">
+                At the beginning of the course, we learned about the basic concepts of databases and database
+                management systems. I was introduced to <strong>tables, rows, columns, primary keys, and
+                relationships</strong> between different entities.
+            </p>
+            <p style="color: #a0a0a0; line-height: 1.8; margin-bottom: 20px;">
+                These concepts seemed simple at first, but they became very important when we started designing
+                our own databases.
+            </p>
 
-        <p>
-            I particularly enjoyed writing SELECT queries because they
-            allowed me to search for information in different ways.
-            Joining tables and applying conditions made me appreciate
-            how powerful databases can be. Every new query felt like
-            solving a small puzzle.
-        </p>
+            <!-- Section 3 -->
+            <h2 style="color: #fff; margin: 35px 0 15px;">🎨 Designing ER Diagrams</h2>
+            <p style="color: #a0a0a0; line-height: 1.8; margin-bottom: 20px;">
+                One of my favorite topics was the <strong>Entity Relationship (ER) Diagram</strong>. Designing
+                ER diagrams taught me how to analyze a real-world problem and convert it into a structured
+                database model.
+            </p>
+            <p style="color: #a0a0a0; line-height: 1.8; margin-bottom: 20px;">
+                It was interesting to see how entities, attributes, and relationships could represent complex
+                systems in an organized way.
+            </p>
 
-        <p>
-            Dr. Bilal Ahmad taught us Database Systems in a way that
-            connected theory with practical applications. He often
-            discussed how high-quality data is essential for Artificial
-            Intelligence and Machine Learning models. He emphasized that
-            good datasets, especially medical datasets, are extremely
-            valuable because they are collected with precision and
-            accuracy. This perspective helped me understand that
-            databases are not just about storing data; they are also
-            about providing reliable information for solving real-world
-            problems.
-        </p>
+            <!-- SQL Code Snippet -->
+            <blockquote style="border-left: 4px solid #34d399; padding: 15px 20px; margin: 25px 0; background: #1a1a1a; border-radius: 8px;">
+                <pre style="color: #34d399; font-family: 'Courier New', monospace; font-size: 0.85rem; margin: 0; line-height: 1.6;">
+<span style="color: #6C63FF;">CREATE TABLE</span> Students (
+    <span style="color: #fbbf24;">student_id</span> <span style="color: #6C63FF;">INT PRIMARY KEY</span>,
+    <span style="color: #fbbf24;">name</span> <span style="color: #6C63FF;">VARCHAR</span>(100),
+    <span style="color: #fbbf24;">major</span> <span style="color: #6C63FF;">VARCHAR</span>(50),
+    <span style="color: #fbbf24;">gpa</span> <span style="color: #6C63FF;">DECIMAL</span>(3,2)
+);
 
-        <p>
-            Through this course, I also learned the importance of
-            planning before implementation. A poorly designed database
-            can create many problems in the future, while a well-designed
-            database improves efficiency and reliability. This lesson is
-            valuable not only in database design but also in many other
-            areas of engineering and software development.
-        </p>
+<span style="color: #6C63FF;">SELECT</span> name, major
+<span style="color: #6C63FF;">FROM</span> Students
+<span style="color: #6C63FF;">WHERE</span> gpa > 3.5;</pre>
+                <p style="color: #666; font-size: 0.85rem; margin-top: 10px;">A simple SQL query that retrieves high-achieving students.</p>
+            </blockquote>
 
-        <p>
-            Looking back, Database Systems has become one of my favorite
-            subjects because it combines logic, problem-solving, and
-            practical applications. The knowledge gained from this course
-            will be useful in future projects and advanced technologies
-            such as Artificial Intelligence, Data Science, and software
-            development.
-        </p>
+            <!-- Section 4 -->
+            <h2 style="color: #fff; margin: 35px 0 15px;">📐 The Power of Normalization</h2>
+            <p style="color: #a0a0a0; line-height: 1.8; margin-bottom: 20px;">
+                Another important topic was <strong>normalization</strong>. At first, normalization looked
+                difficult because there were many rules and forms to remember.
+            </p>
+            <p style="color: #a0a0a0; line-height: 1.8; margin-bottom: 20px;">
+                After practicing several examples, I understood its purpose. Normalization helps
+                <strong>reduce redundancy, improve data consistency, and make databases more efficient</strong>.
+                It showed me the importance of good database design.
+            </p>
 
-        <p>
-            This course taught me that data is one of the most valuable
-            resources in the modern world. Understanding how to organize,
-            manage, and analyze data is an essential skill for every
-            engineer. I am excited to continue learning more about
-            databases and apply these concepts in future projects and
-            real-world applications.
-        </p>
-    </article>
+            <!-- Section 5 -->
+            <h2 style="color: #fff; margin: 35px 0 15px;">⚡ SQL: Communicating with Databases</h2>
+            <p style="color: #a0a0a0; line-height: 1.8; margin-bottom: 20px;">
+                The most exciting part of the course was learning <strong>SQL (Structured Query Language)</strong>.
+                Writing SQL queries made me feel like I was communicating directly with the database.
+            </p>
+            <p style="color: #a0a0a0; line-height: 1.8; margin-bottom: 20px;">
+                I learned how to <strong>create tables, insert data, update records, delete information, and
+                retrieve specific data</strong> using different queries.
+            </p>
+            <p style="color: #a0a0a0; line-height: 1.8; margin-bottom: 20px;">
+                I particularly enjoyed writing <strong>SELECT queries</strong> because they allowed me to search
+                for information in different ways. Joining tables and applying conditions made me appreciate
+                how powerful databases can be. Every new query felt like solving a small puzzle.
+            </p>
 
+            <!-- Section 6 -->
+            <h2 style="color: #fff; margin: 35px 0 15px;">👨‍🏫 Lessons from Dr. Bilal Ahmad</h2>
+            <p style="color: #a0a0a0; line-height: 1.8; margin-bottom: 20px;">
+                <strong>Dr. Bilal Ahmad</strong> taught us Database Systems in a way that connected theory with
+                practical applications. He often discussed how high-quality data is essential for
+                <strong>Artificial Intelligence and Machine Learning</strong> models.
+            </p>
+            <p style="color: #a0a0a0; line-height: 1.8; margin-bottom: 20px;">
+                He emphasized that good datasets, especially <strong>medical datasets</strong>, are extremely
+                valuable because they are collected with precision and accuracy. This perspective helped me
+                understand that databases are not just about storing data; they are also about providing
+                reliable information for solving real-world problems.
+            </p>
+
+            <!-- Section 7 -->
+            <h2 style="color: #fff; margin: 35px 0 15px;">📈 Planning Before Implementation</h2>
+            <p style="color: #a0a0a0; line-height: 1.8; margin-bottom: 20px;">
+                Through this course, I also learned the importance of <strong>planning before implementation</strong>.
+                A poorly designed database can create many problems in the future, while a well-designed database
+                improves efficiency and reliability.
+            </p>
+            <p style="color: #a0a0a0; line-height: 1.8; margin-bottom: 20px;">
+                This lesson is valuable not only in database design but also in many other areas of engineering
+                and software development.
+            </p>
+
+            <!-- Conclusion -->
+            <h2 style="color: #fff; margin: 35px 0 15px;">🚀 Looking Forward</h2>
+            <p style="color: #a0a0a0; line-height: 1.8; margin-bottom: 20px;">
+                Looking back, Database Systems has become one of my favorite subjects because it combines
+                <strong>logic, problem-solving, and practical applications</strong>. The knowledge gained from
+                this course will be useful in future projects and advanced technologies such as
+                Artificial Intelligence, Data Science, and software development.
+            </p>
+            <p style="color: #c0c0c0; line-height: 1.8; font-size: 1.1rem; border-top: 1px solid #1a1a1a; padding-top: 20px;">
+                This course taught me that <strong>data is one of the most valuable resources in the modern world</strong>.
+                Understanding how to organize, manage, and analyze data is an essential skill for every engineer.
+                I am excited to continue learning more about databases and apply these concepts in future projects
+                and real-world applications. 📊
+            </p>
+
+            <!-- Tags -->
+            <div style="margin-top: 30px; display: flex; gap: 10px; flex-wrap: wrap;">
+                <span style="background: #1a1a1a; padding: 4px 14px; border-radius: 50px; font-size: 0.8rem; color: #666; border: 1px solid #2a2a2a;">#DatabaseSystems</span>
+                <span style="background: #1a1a1a; padding: 4px 14px; border-radius: 50px; font-size: 0.8rem; color: #666; border: 1px solid #2a2a2a;">#SQL</span>
+                <span style="background: #1a1a1a; padding: 4px 14px; border-radius: 50px; font-size: 0.8rem; color: #666; border: 1px solid #2a2a2a;">#MySQL</span>
+                <span style="background: #1a1a1a; padding: 4px 14px; border-radius: 50px; font-size: 0.8rem; color: #666; border: 1px solid #2a2a2a;">#Data</span>
+                <span style="background: #1a1a1a; padding: 4px 14px; border-radius: 50px; font-size: 0.8rem; color: #666; border: 1px solid #2a2a2a;">#UET</span>
+            </div>
+
+            <!-- Back to Blog -->
+            <div style="text-align: center; margin-top: 40px; display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                <a href="../blog.html" class="btn-secondary">← Back to Blog</a>
+                <a href="../index.html" class="btn-secondary">← Back to Home</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
     <footer>
-        <hr>
-        <p>
-            © 2026 Noor | Computer Engineering Student |
-            UET Lahore, Faisalabad Campus
-        </p>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3>Noor.</h3>
+                    <p>Building the future, one line of code at a time.</p>
+                </div>
+                <div>
+                    <h4>Navigate</h4>
+                    <a href="../index.html">Home</a>
+                    <a href="../about.html">About</a>
+                    <a href="../projects.html">Work</a>
+                    <a href="../blog.html">Writings</a>
+                </div>
+                <div>
+                    <h4>Connect</h4>
+                    <a href="https://github.com/Noor-Fatima.github.io" target="_blank">GitHub</a>
+                    <a href="#">LinkedIn</a>
+                    <a href="mailto:noofatima45@gmail.com">Email</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Noor. Crafted with ☕ and ❤️</p>
+            </div>
+        </div>
     </footer>
+
+    <!-- Mobile Menu Toggle -->
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('open');
+        });
+    </script>
 
 </body>
 </html>
-```
-
