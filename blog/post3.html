@@ -1,128 +1,239 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>My Journey in Programming Fundamentals | Noor</title>
-    <link rel="stylesheet" href="../style.css">
+
+    <!-- SEO -->
+    <meta name="description" content="My journey learning Programming Fundamentals as a Computer Engineering student." />
+    <meta name="keywords" content="Noor, Programming Fundamentals, C++, Computer Engineering, UET Faisalabad" />
+    <meta name="author" content="Noor" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="My Journey in Programming Fundamentals | Noor" />
+    <meta property="og:description" content="From writing my first 'Hello World' to solving complex problems." />
+    <meta property="og:type" content="article" />
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="../style.css" />
 </head>
+
 <body>
 
-    <nav>
-        <a href="../index.html">Home</a>
-        <a href="../about.html">About</a>
-        <a href="../projects.html">Projects</a>
-        <a href="../blog.html">Blog</a>
-        <a href="../contact.html">Contact</a>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">Noor.</div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../projects.html">Work</a></li>
+            <li><a href="../blog.html" class="active">Writings</a></li>
+            <li><a href="../contact.html" class="nav-cta">Let's Talk</a></li>
+        </ul>
+        <button class="hamburger" aria-label="Toggle menu">☰</button>
     </nav>
 
-    <article>
-        <h1>My Journey in Programming Fundamentals</h1>
+    <!-- BLOG POST HERO -->
+    <section class="hero" style="padding: 60px 20px 40px;">
+        <div class="hero-container" style="grid-template-columns: 1fr; text-align: center; max-width: 800px;">
+            <div class="hero-text">
+                <span class="badge">📝 Blog Post</span>
+                <h1 style="font-size: 2.8rem;">My Journey in <span class="gradient-text">Programming Fundamentals</span></h1>
+                <div class="blog-meta" style="justify-content: center; margin: 15px 0;">
+                    <span>📅 June 15, 2026</span>
+                    <span>•</span>
+                    <span>⏱️ 4 min read</span>
+                    <span>•</span>
+                    <span>🏷️ Programming</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <p>
-            One of the most interesting courses during my first year of
-            Computer Engineering was Programming Fundamentals. Before
-            joining university, I had heard that programming was
-            difficult and required a lot of practice. I was both excited
-            and nervous because this was my first formal introduction to
-            the world of coding.
-        </p>
+    <!-- BLOG CONTENT -->
+    <section style="padding: 20px 0 60px;">
+        <div class="container" style="max-width: 750px;">
 
-        <p>
-            In the beginning, even simple concepts such as variables,
-            data types, and input-output statements seemed new and
-            confusing. Writing my first program and seeing it run
-            successfully gave me a feeling of achievement. It was a
-            small program, but it made me realize that programming is
-            not only about writing code; it is about solving problems in
-            a logical way.
-        </p>
+            <!-- Introduction -->
+            <p style="font-size: 1.2rem; color: #c0c0c0; line-height: 1.8; margin-bottom: 25px;">
+                One of the most interesting courses during my first year of Computer Engineering was
+                <strong>Programming Fundamentals</strong>. Before joining university, I had heard that
+                programming was difficult and required a lot of practice.
+            </p>
 
-        <p>
-            As the semester progressed, we learned about decision
-            structures, loops, arrays, functions, and other important
-            programming concepts. Every new topic felt like a new
-            challenge. Sometimes my programs produced errors that took
-            hours to solve. There were moments when I became frustrated
-            because I could not understand why my code was not working.
-            However, every mistake taught me something new.
-        </p>
+            <p style="color: #a0a0a0; line-height: 1.8; margin-bottom: 20px;">
+                I was both excited and nervous because this was my first formal introduction to the world of coding.
+            </p>
 
-        <p>
-            One of the biggest lessons I learned from Programming
-            Fundamentals was the importance of practice. Programming
-            cannot be learned only by reading books or watching lectures.
-            It requires writing code again and again until the concepts
-            become clear. The more programs I wrote, the more confident
-            I became in my abilities.
-        </p>
+            <!-- Section 1 -->
+            <h2 style="color: #fff; margin: 35px 0 15px;">💻 The Beginning</h2>
+            <p style="color: #a0a0a0; line-height: 1.8; margin-bottom: 20px;">
+                In the beginning, even simple concepts such as variables, data types, and input-output statements
+                seemed new and confusing. Writing my first program and seeing it run successfully gave me a
+                feeling of achievement.
+            </p>
+            <p style="color: #a0a0a0; line-height: 1.8; margin-bottom: 20px;">
+                It was a small program, but it made me realize that programming is not only about writing code;
+                it is about <strong>solving problems in a logical way</strong>.
+            </p>
 
-        <p>
-            I also learned the importance of debugging. Sometimes a
-            program would fail because of a missing semicolon, a wrong
-            condition, or a small typing mistake. At first these errors
-            seemed annoying, but later I understood that debugging is an
-            essential part of programming. It teaches patience,
-            attention to detail, and problem-solving skills.
-        </p>
+            <!-- Blockquote - Code Snippet -->
+            <blockquote style="border-left: 4px solid #6C63FF; padding: 15px 20px; margin: 25px 0; background: #1a1a1a; border-radius: 8px;">
+                <pre style="color: #34d399; font-family: 'Courier New', monospace; font-size: 0.9rem; margin: 0;">
+<span style="color: #6C63FF;">#include</span> <span style="color: #fbbf24;">&lt;iostream&gt;</span>
+<span style="color: #6C63FF;">using namespace</span> std;
 
-        <p>
-            Dr. Bilal Ahmad, who taught us Programming Fundamentals,
-            always encouraged us to think beyond memorizing syntax. He
-            emphasized understanding the logic behind every program.
-            Through his guidance, I realized that programming is a way
-            of thinking. It teaches us how to analyze problems and find
-            efficient solutions.
-        </p>
+<span style="color: #6C63FF;">int</span> <span style="color: #34d399;">main</span>() {
+    cout << <span style="color: #fbbf24;">"Hello, World!"</span>;
+    <span style="color: #6C63FF;">return</span> 0;
+}</pre>
+                <p style="color: #666; font-size: 0.85rem; margin-top: 10px;">My first program — simple, but it changed everything.</p>
+            </blockquote>
 
-        <p>
-            Another interesting aspect of the course was learning how
-            programming can be applied to real-world problems. Dr. Bilal
-            Ahmad often discussed Artificial Intelligence and Machine
-            Learning applications and how programming forms the
-            foundation of these advanced technologies. These discussions
-            motivated me to improve my programming skills and explore
-            new areas of computer science.
-        </p>
+            <!-- Section 2 -->
+            <h2 style="color: #fff; margin: 35px 0 15px;">📚 Learning New Concepts</h2>
+            <p style="color: #a0a0a0; line-height: 1.8; margin-bottom: 20px;">
+                As the semester progressed, we learned about decision structures, loops, arrays, functions,
+                and other important programming concepts. Every new topic felt like a new challenge.
+            </p>
+            <p style="color: #a0a0a0; line-height: 1.8; margin-bottom: 20px;">
+                Sometimes my programs produced errors that took hours to solve. There were moments when I became
+                frustrated because I could not understand why my code was not working. However,
+                <strong>every mistake taught me something new</strong>.
+            </p>
 
-        <p>
-            Programming Fundamentals also improved my confidence. At the
-            start of the semester, writing even a small program felt
-            difficult. By the end of the course, I was able to solve
-            more complex problems and understand how different concepts
-            work together. This progress showed me that learning is a
-            gradual process and that consistent effort leads to success.
-        </p>
+            <!-- Section 3 -->
+            <h2 style="color: #fff; margin: 35px 0 15px;">💪 The Power of Practice</h2>
+            <p style="color: #a0a0a0; line-height: 1.8; margin-bottom: 20px;">
+                One of the biggest lessons I learned from Programming Fundamentals was the
+                <strong>importance of practice</strong>. Programming cannot be learned only by reading books
+                or watching lectures.
+            </p>
+            <p style="color: #a0a0a0; line-height: 1.8; margin-bottom: 20px;">
+                It requires writing code again and again until the concepts become clear. The more programs I
+                wrote, the more confident I became in my abilities.
+            </p>
 
-        <p>
-            The course taught me valuable lessons that go beyond coding.
-            It improved my logical thinking, patience, and ability to
-            solve problems systematically. These skills are not only
-            useful in programming but also in everyday life and future
-            engineering projects.
-        </p>
+            <!-- Section 4 -->
+            <h2 style="color: #fff; margin: 35px 0 15px;">🐛 Debugging: The Art of Problem Solving</h2>
+            <p style="color: #a0a0a0; line-height: 1.8; margin-bottom: 20px;">
+                I also learned the importance of debugging. Sometimes a program would fail because of a
+                missing semicolon, a wrong condition, or a small typing mistake.
+            </p>
+            <p style="color: #a0a0a0; line-height: 1.8; margin-bottom: 20px;">
+                At first these errors seemed annoying, but later I understood that debugging is an essential
+                part of programming. It teaches <strong>patience, attention to detail, and problem-solving skills</strong>.
+            </p>
 
-        <p>
-            Looking back, Programming Fundamentals was one of the most
-            important courses in my academic journey. It laid the
-            foundation for future courses and introduced me to the world
-            of software development. I know that there is still a lot to
-            learn, but this course gave me the confidence and motivation
-            to continue improving my skills and exploring new
-            technologies.
-        </p>
-    </article>
+            <!-- Section 5 -->
+            <h2 style="color: #fff; margin: 35px 0 15px;">👨‍🏫 Guidance from Dr. Bilal Ahmad</h2>
+            <p style="color: #a0a0a0; line-height: 1.8; margin-bottom: 20px;">
+                <strong>Dr. Bilal Ahmad</strong>, who taught us Programming Fundamentals, always encouraged us
+                to think beyond memorizing syntax. He emphasized understanding the logic behind every program.
+            </p>
+            <p style="color: #a0a0a0; line-height: 1.8; margin-bottom: 20px;">
+                Through his guidance, I realized that programming is a way of thinking. It teaches us how to
+                analyze problems and find efficient solutions.
+            </p>
 
+            <!-- Section 6 -->
+            <h2 style="color: #fff; margin: 35px 0 15px;">🤖 Real-World Applications</h2>
+            <p style="color: #a0a0a0; line-height: 1.8; margin-bottom: 20px;">
+                Another interesting aspect of the course was learning how programming can be applied to
+                real-world problems. Dr. Bilal Ahmad often discussed
+                <strong>Artificial Intelligence and Machine Learning</strong> applications and how programming
+                forms the foundation of these advanced technologies.
+            </p>
+            <p style="color: #a0a0a0; line-height: 1.8; margin-bottom: 20px;">
+                These discussions motivated me to improve my programming skills and explore new areas of
+                computer science.
+            </p>
+
+            <!-- Section 7 -->
+            <h2 style="color: #fff; margin: 35px 0 15px;">📈 Confidence and Growth</h2>
+            <p style="color: #a0a0a0; line-height: 1.8; margin-bottom: 20px;">
+                Programming Fundamentals also improved my confidence. At the start of the semester, writing
+                even a small program felt difficult. By the end of the course, I was able to solve more
+                complex problems and understand how different concepts work together.
+            </p>
+            <p style="color: #a0a0a0; line-height: 1.8; margin-bottom: 20px;">
+                This progress showed me that learning is a gradual process and that
+                <strong>consistent effort leads to success</strong>.
+            </p>
+
+            <!-- Conclusion -->
+            <h2 style="color: #fff; margin: 35px 0 15px;">🚀 Beyond Coding</h2>
+            <p style="color: #a0a0a0; line-height: 1.8; margin-bottom: 20px;">
+                The course taught me valuable lessons that go beyond coding. It improved my
+                <strong>logical thinking, patience, and ability to solve problems systematically</strong>.
+                These skills are not only useful in programming but also in everyday life and future
+                engineering projects.
+            </p>
+            <p style="color: #c0c0c0; line-height: 1.8; font-size: 1.1rem; border-top: 1px solid #1a1a1a; padding-top: 20px;">
+                Looking back, Programming Fundamentals was one of the most important courses in my academic
+                journey. It laid the foundation for future courses and introduced me to the world of software
+                development. I know that there is still a lot to learn, but this course gave me the confidence
+                and motivation to continue improving my skills and exploring new technologies. 💻
+            </p>
+
+            <!-- Tags -->
+            <div style="margin-top: 30px; display: flex; gap: 10px; flex-wrap: wrap;">
+                <span style="background: #1a1a1a; padding: 4px 14px; border-radius: 50px; font-size: 0.8rem; color: #666; border: 1px solid #2a2a2a;">#Programming</span>
+                <span style="background: #1a1a1a; padding: 4px 14px; border-radius: 50px; font-size: 0.8rem; color: #666; border: 1px solid #2a2a2a;">#C++</span>
+                <span style="background: #1a1a1a; padding: 4px 14px; border-radius: 50px; font-size: 0.8rem; color: #666; border: 1px solid #2a2a2a;">#CodingJourney</span>
+                <span style="background: #1a1a1a; padding: 4px 14px; border-radius: 50px; font-size: 0.8rem; color: #666; border: 1px solid #2a2a2a;">#UET</span>
+            </div>
+
+            <!-- Back to Blog -->
+            <div style="text-align: center; margin-top: 40px; display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                <a href="../blog.html" class="btn-secondary">← Back to Blog</a>
+                <a href="../index.html" class="btn-secondary">← Back to Home</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
     <footer>
-        <hr>
-        <p>
-            © 2026 Noor | Computer Engineering Student |
-            UET Lahore, Faisalabad Campus
-        </p>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3>Noor.</h3>
+                    <p>Building the future, one line of code at a time.</p>
+                </div>
+                <div>
+                    <h4>Navigate</h4>
+                    <a href="../index.html">Home</a>
+                    <a href="../about.html">About</a>
+                    <a href="../projects.html">Work</a>
+                    <a href="../blog.html">Writings</a>
+                </div>
+                <div>
+                    <h4>Connect</h4>
+                    <a href="https://github.com/Noor-Fatima.github.io" target="_blank">GitHub</a>
+                    <a href="#">LinkedIn</a>
+                    <a href="mailto:noofatima45@gmail.com">Email</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Noor. Crafted with ☕ and ❤️</p>
+            </div>
+        </div>
     </footer>
+
+    <!-- Mobile Menu Toggle -->
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('open');
+        });
+    </script>
 
 </body>
 </html>
-```
-
