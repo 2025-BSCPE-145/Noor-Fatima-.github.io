@@ -1,107 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Noor | Portfolio</title>
 
     <!-- SEO -->
-    <meta name="description" content="Portfolio and blog of Noor, Computer Engineering student at UET Faisalabad Campus.">
-    <meta name="keywords" content="Noor, Computer Engineering, UET Faisalabad, Programming, Database Systems, Portfolio">
-    <meta name="author" content="Noor">
+    <meta name="description" content="Portfolio and blog of Noor, Computer Engineering student at UET Faisalabad Campus." />
+    <meta name="keywords" content="Noor, Computer Engineering, UET Faisalabad, Programming, Database Systems, Portfolio" />
+    <meta name="author" content="Noor" />
 
-    <!-- Open Graph (for sharing on WhatsApp / LinkedIn) -->
-    <meta property="og:title" content="Noor | Portfolio">
-    <meta property="og:description" content="Computer Engineering student portfolio and blog">
-    <meta property="og:type" content="website">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Noor | Portfolio" />
+    <meta property="og:description" content="Computer Engineering student portfolio and blog" />
+    <meta property="og:type" content="website" />
 
     <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-<!-- NAVBAR -->
-<nav class="navbar">
-    <div class="logo">
-        <a href="index.html">Noor.dev</a>
-    </div>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">Noor.dev</a>
+        </div>
+        <div class="nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
 
-    <div class="nav-links">
-        <a href="index.html" class="active">Home</a>
-        <a href="about.html">About</a>
-        <a href="projects.html">Projects</a>
-        <a href="blog.html">Blog</a>
-        <a href="contact.html">Contact</a>
-    </div>
-</nav>
-
-<!-- HERO SECTION -->
-<header class="hero">
-    <h1>Welcome to My Portfolio Website</h1>
-
-    <h2>Hi, I'm Noor 👋</h2>
-
-    <p>
-        Computer Engineering student at UET Lahore, Faisalabad Campus.
-        I share my learning journey, projects, and academic growth here.
-    </p>
-
-    <p>
-        Inspired by my professor <b>Dr. Bilal Ahmad</b>, this website represents my
-        progress as a future engineer and continuous learning path.
-    </p>
-
-    <div class="hero-buttons">
-        <a href="projects.html" class="btn">View Projects</a>
-        <a href="blog.html" class="btn btn-outline">Read Blog</a>
-    </div>
-</header>
-
-<!-- CONTENT GRID -->
-<main class="container">
-
-    <section class="card">
-        <h2>📌 About This Website</h2>
-        <ul>
-            <li>Personal blog posts</li>
-            <li>Academic experiences</li>
-            <li>Programming & database projects</li>
-            <li>Engineering journey</li>
-            <li>Future career goals</li>
-        </ul>
-    </section>
-
-    <section class="card">
-        <h2>💡 My Interests</h2>
-        <ul>
-            <li>Programming & Software Development</li>
-            <li>Database Systems (SQL, MySQL)</li>
-            <li>Artificial Intelligence</li>
-            <li>Machine Learning</li>
-            <li>Web Development</li>
-        </ul>
-    </section>
-
-    <section class="card highlight">
-        <h2>🚀 Latest Update</h2>
+    <!-- HERO SECTION -->
+    <header class="hero">
+        <h1>Welcome to My Portfolio Website</h1>
+        <h2>Hi, I'm Noor 👋</h2>
         <p>
-            I will continuously improve this website by adding new projects,
-            blog posts, and learning experiences throughout my university journey.
+            Computer Engineering student at UET Lahore, Faisalabad Campus.
+            I share my learning journey, projects, and academic growth here.
         </p>
-    </section>
+        <p>
+            Inspired by my professor <b>Dr. Bilal Ahmad</b>, this website represents my
+            progress as a future engineer and continuous learning path.
+        </p>
+        <div class="hero-buttons">
+            <a href="projects.html" class="btn">View Projects</a>
+            <a href="blog.html" class="btn btn-outline">Read Blog</a>
+        </div>
+    </header>
 
-</main>
+    <!-- CONTENT GRID -->
+    <main class="container">
 
-<!-- FOOTER -->
-<footer class="footer">
-    <p>© 2026 Noor | Computer Engineering Student</p>
-    <p>UET Lahore, Faisalabad Campus</p>
-    <p>Built with HTML, CSS & GitHub Pages 🚀</p>
-</footer>
+        <!-- ✅ UPDATED: Featured Project -->
+        <section class="card highlight">
+            <h2>⭐ Featured Project</h2>
+            <h3>Student Database Management System</h3>
+            <p>
+                A <b>MySQL</b> database system for managing student records, courses, and enrollments.
+                Built as part of my Database Systems course.
+            </p>
+            <ul>
+                <li>✅ CRUD operations (Create, Read, Update, Delete)</li>
+                <li>✅ Complex SQL queries (JOINs, subqueries, aggregations)</li>
+                <li>✅ Python CLI interface for interaction</li>
+            </ul>
+            <p><b>Tech:</b> Python, MySQL, SQLAlchemy</p>
+            <a href="projects.html" class="btn" style="margin-top: 10px;">🔗 View on GitHub</a>
+        </section>
+
+        <!-- ✅ UPDATED: Recent Blog Post -->
+        <section class="card">
+            <h2>📝 Latest Blog Post</h2>
+            <h3>What I Learned Building My First Database Project</h3>
+            <p>
+                <small>📅 Published: June 20, 2026</small>
+            </p>
+            <p>
+                Designing my first relational database taught me the importance of
+                <b>normalization</b>, <b>foreign keys</b>, and <b>transaction management</b>.
+                I also discovered that writing clean SQL queries is an art!
+            </p>
+            <a href="blog.html">Read full post →</a>
+        </section>
+
+        <!-- ✅ UPDATED: Skills with Context -->
+        <section class="card">
+            <h2>🛠️ Skills & Tools</h2>
+            <ul>
+                <li><b>Languages:</b> Python, C++, JavaScript, SQL</li>
+                <li><b>Databases:</b> MySQL, SQLite, PostgreSQL</li>
+                <li><b>Web:</b> HTML, CSS, GitHub Pages</li>
+                <li><b>Concepts:</b> OOP, Data Structures, DBMS</li>
+            </ul>
+        </section>
+
+        <!-- ✅ UPDATED: What's Next -->
+        <section class="card highlight">
+            <h2>🚀 Coming Up Next</h2>
+            <ul>
+                <li>📊 <b>Data Visualization Dashboard</b> using Python & Matplotlib</li>
+                <li>🌐 <b>Personal Blog</b> with weekly learning updates</li>
+                <li>🤖 <b>Intro to Machine Learning</b> – First ML model</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>© 2026 Noor | Computer Engineering Student</p>
+        <p>UET Lahore, Faisalabad Campus</p>
+        <p>Built with HTML, CSS & GitHub Pages 🚀</p>
+    </footer>
 
 </body>
 </html>
