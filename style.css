@@ -1,0 +1,680 @@
+/* ========================================
+   RESET & BASE
+   ======================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: #0a0a0a;
+    color: #e5e5e5;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* ========================================
+   UTILITY CLASSES
+   ======================================== */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.gradient-text {
+    background: linear-gradient(135deg, #6C63FF, #38bdf8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.section-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #6C63FF;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: inline-block;
+}
+
+/* ========================================
+   BUTTONS
+   ======================================== */
+.btn-primary {
+    display: inline-block;
+    background: linear-gradient(135deg, #6C63FF, #38bdf8);
+    color: #fff;
+    padding: 12px 28px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(108, 99, 255, 0.3);
+}
+
+.btn-secondary {
+    display: inline-block;
+    background: transparent;
+    color: #fff;
+    padding: 12px 28px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    border: 1px solid #333;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-secondary:hover {
+    border-color: #6C63FF;
+    background: rgba(108, 99, 255, 0.08);
+}
+
+/* ========================================
+   NAVBAR
+   ======================================== */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 60px;
+    background: rgba(10, 10, 10, 0.92);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, #6C63FF, #38bdf8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.nav-links a {
+    color: #a0a0a0;
+    font-weight: 400;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #ffffff;
+}
+
+.nav-links a.active::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(135deg, #6C63FF, #38bdf8);
+    border-radius: 2px;
+}
+
+.nav-cta {
+    background: linear-gradient(135deg, #6C63FF, #38bdf8);
+    color: #fff !important;
+    padding: 8px 22px;
+    border-radius: 50px;
+    font-weight: 600 !important;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.nav-cta:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+    color: #fff !important;
+}
+
+.hamburger {
+    display: none;
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+/* ========================================
+   HERO
+   ======================================== */
+.hero {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    padding: 80px 60px;
+    background: radial-gradient(ellipse at 20% 50%, #141425 0%, #0a0a0a 70%);
+}
+
+.hero-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.badge {
+    display: inline-block;
+    background: rgba(108, 99, 255, 0.12);
+    color: #6C63FF;
+    padding: 5px 16px;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 1.08;
+    margin-bottom: 16px;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #a0a0a0;
+    max-width: 500px;
+    margin-bottom: 30px;
+}
+
+.subtitle .highlight {
+    color: #ffffff;
+    border-bottom: 2px solid #6C63FF;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.stats {
+    display: flex;
+    gap: 40px;
+}
+
+.stats div span {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.stats div {
+    color: #a0a0a0;
+    font-size: 0.85rem;
+}
+
+/* ========================================
+   CODE BLOCK (Hero Visual)
+   ======================================== */
+.code-block {
+    background: #111;
+    border-radius: 12px;
+    padding: 24px;
+    border: 1px solid #1e1e1e;
+    font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+    font-size: 0.85rem;
+    line-height: 1.8;
+}
+
+.code-block .dots {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 16px;
+}
+
+.code-block .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.code-block .dot.green { background: #34d399; }
+.code-block .dot.yellow { background: #fbbf24; }
+.code-block .dot.red { background: #f87171; }
+
+.code-blue { color: #6C63FF; }
+.code-yellow { color: #fbbf24; }
+.code-green { color: #34d399; }
+.code-gray { color: #6b7280; }
+
+/* ========================================
+   FEATURED PROJECT
+   ======================================== */
+.featured {
+    padding: 80px 0;
+    background: #0f0f0f;
+}
+
+.featured h2 {
+    font-size: 2.5rem;
+    margin: 10px 0 30px;
+}
+
+.featured-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: start;
+}
+
+.featured-content p {
+    color: #a0a0a0;
+    margin-bottom: 20px;
+}
+
+.feature-list {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.feature-list li {
+    padding: 4px 0;
+    color: #c0c0c0;
+}
+
+.tech-stack {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin: 20px 0 24px;
+}
+
+.tech-stack span {
+    background: #1a1a1a;
+    padding: 4px 14px;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    color: #a0a0a0;
+    border: 1px solid #2a2a2a;
+}
+
+/* ========================================
+   MOCKUP (Project Preview)
+   ======================================== */
+.mockup {
+    background: #111;
+    border-radius: 12px;
+    border: 1px solid #1e1e1e;
+    overflow: hidden;
+}
+
+.mockup-header {
+    background: #1a1a1a;
+    padding: 12px 16px;
+    font-size: 0.75rem;
+    color: #a0a0a0;
+    border-bottom: 1px solid #1e1e1e;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.mockup-body {
+    padding: 20px;
+}
+
+.mockup-body .row {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 0;
+    border-bottom: 1px solid #1a1a1a;
+}
+
+.mockup-body .row:last-child {
+    border-bottom: none;
+}
+
+.mockup-body .key { color: #6C63FF; }
+.mockup-body .value { color: #e5e5e5; }
+.mockup-body .value.highlight { color: #34d399; font-weight: 600; }
+
+/* ========================================
+   BLOG PREVIEW
+   ======================================== */
+.blog-preview {
+    padding: 80px 0;
+}
+
+.blog-card {
+    background: #111;
+    border-radius: 12px;
+    padding: 32px;
+    border: 1px solid #1a1a1a;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+}
+
+.blog-card:hover {
+    border-color: #6C63FF;
+    transform: translateY(-4px);
+}
+
+.blog-meta {
+    color: #666;
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.blog-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.blog-card p {
+    color: #a0a0a0;
+    margin-bottom: 15px;
+}
+
+.read-link {
+    color: #6C63FF;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.read-link:hover {
+    color: #38bdf8;
+}
+
+/* ========================================
+   CTA SECTION
+   ======================================== */
+.cta {
+    padding: 80px 0;
+    text-align: center;
+    background: radial-gradient(ellipse at center, #141425 0%, #0a0a0a 70%);
+}
+
+.cta h2 {
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+}
+
+.cta p {
+    color: #a0a0a0;
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+}
+
+/* ========================================
+   FOOTER
+   ======================================== */
+footer {
+    padding: 50px 0 20px;
+    border-top: 1px solid #1a1a1a;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-grid h3 {
+    font-size: 1.5rem;
+    background: linear-gradient(135deg, #6C63FF, #38bdf8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.footer-grid h4 {
+    font-size: 1rem;
+    margin-bottom: 16px;
+    color: #fff;
+}
+
+.footer-grid a {
+    display: block;
+    color: #a0a0a0;
+    padding: 4px 0;
+    transition: color 0.3s ease;
+}
+
+.footer-grid a:hover {
+    color: #fff;
+}
+
+.footer-grid p {
+    color: #a0a0a0;
+}
+
+.footer-bottom {
+    border-top: 1px solid #1a1a1a;
+    padding-top: 20px;
+    text-align: center;
+    color: #555;
+    font-size: 0.85rem;
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+
+/* Tablets */
+@media (max-width: 1024px) {
+    .hero-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .subtitle {
+        margin: 0 auto 30px;
+        max-width: 100%;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .stats {
+        justify-content: center;
+    }
+
+    .featured-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 15px;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background: rgba(10, 10, 10, 0.98);
+        padding: 25px 20px;
+        border-bottom: 1px solid #1a1a1a;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .hero h1 {
+        font-size: 2.6rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    .stats {
+        flex-direction: column;
+        gap: 8px;
+        align-items: center;
+    }
+
+    .stats div {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .stats div span {
+        display: inline;
+        font-size: 1.2rem;
+        min-width: 40px;
+    }
+
+    .featured h2 {
+        font-size: 2rem;
+    }
+
+    .blog-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .cta h2 {
+        font-size: 2rem;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .code-block {
+        font-size: 0.7rem;
+        padding: 16px;
+    }
+
+    .code-block pre {
+        overflow-x: auto;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        width: 100%;
+        max-width: 280px;
+        text-align: center;
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+
+    .featured {
+        padding: 50px 0;
+    }
+
+    .blog-preview {
+        padding: 50px 0;
+    }
+
+    .cta {
+        padding: 50px 0;
+    }
+}
+
+/* ========================================
+   SCROLLBAR STYLING
+   ======================================== */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #333;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #6C63FF;
+}
+
+/* ========================================
+   SELECTION
+   ======================================== */
+::selection {
+    background: #6C63FF;
+    color: #fff;
+}
