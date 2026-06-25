@@ -1,310 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Noor | Portfolio</title>
 
-    <meta name="description"
-        content="Portfolio and blog of Noor, Computer Engineering student at UET Faisalabad Campus.">
+    <!-- SEO -->
+    <meta name="description" content="Portfolio and blog of Noor, Computer Engineering student at UET Faisalabad Campus." />
+    <meta name="keywords" content="Noor, Computer Engineering, UET Faisalabad, Programming, Database Systems, Portfolio" />
+    <meta name="author" content="Noor" />
 
-    <meta name="keywords"
-        content="Noor, Computer Engineering, UET Faisalabad, Programming, Database Systems, Portfolio">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Noor | Portfolio" />
+    <meta property="og:description" content="Computer Engineering student portfolio and blog" />
+    <meta property="og:type" content="website" />
 
-    <meta name="author" content="Noor">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
 
-    <link rel="stylesheet" href="style.css">
-
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-<script>
-const themeBtn = document.getElementById('theme-toggle');
 
-themeBtn.addEventListener('click', () => {
-    document.body.classList.toggle('light-mode');
-
-    if (document.body.classList.contains('light-mode')) {
-        themeBtn.innerHTML = "☀️";
-    } else {
-        themeBtn.innerHTML = "🌙";
-    }
-});
-</script>
     <!-- NAVBAR -->
     <nav class="navbar">
         <div class="logo">Noor.</div>
-
         <ul class="nav-links">
             <li><a href="index.html" class="active">Home</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Work</a></li>
+            <li><a href="projects.html">Projects</a></li>
             <li><a href="blog.html">Writings</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html" class="nav-cta">Let's Talk</a></li>
         </ul>
-
-        <button id="theme-toggle">🌙</button>
-        <button class="hamburger">☰</button>
+        <button class="hamburger" aria-label="Toggle menu">☰</button>
     </nav>
 
-    <!-- HERO -->
+    <!-- HERO SECTION -->
     <section class="hero">
         <div class="hero-container">
-
             <div class="hero-text">
-                <span class="badge">
-                    🚀 Computer Engineering Student
-                </span>
-
-                <h1>
-                    Hi, I'm
-                    <span class="gradient-text">
-                        Noor
-                    </span>
-                </h1>
-
+                <span class="badge">🚀 Computer Engineering Student</span>
+                <h1>Hi, I'm <span class="gradient-text">Noor</span></h1>
                 <p class="subtitle">
-                    I build things that solve real problems.
-                    Currently exploring
-                    <strong>AI</strong>,
-                    <strong>Databases</strong>,
-                    and
-                    <strong>Web Development</strong>.
+                    I build things that <span class="highlight">solve real problems</span>.
+                    Currently exploring the intersection of <strong>AI</strong>,
+                    <strong>databases</strong>, and <strong>web development</strong>.
                 </p>
-
                 <div class="hero-buttons">
-                    <a href="projects.html" class="btn-primary">
-                        See My Work →
-                    </a>
-
-                    <a href="about.html" class="btn-secondary">
-                        About Me
-                    </a>
-
-                    <a href="assets/resume.pdf"
-                        class="btn-secondary"
-                        download>
-                        📄 Download CV
-                    </a>
+                    <a href="projects.html" class="btn-primary">See My Work →</a>
+                    <a href="about.html" class="btn-secondary">About Me</a>
                 </div>
-
                 <div class="stats">
-                    <div>
-                        <span>3+</span>
-                        Projects
-                    </div>
-
-                    <div>
-                        <span>UET</span>
-                        Lahore
-                    </div>
-
-                    <div>
-                        <span>2025</span>
-                        Batch
-                    </div>
+                    <div><span>3+</span> Projects</div>
+                    <div><span>UET</span> Lahore</div>
+                    <div><span>2025</span> Batch</div>
                 </div>
             </div>
-
             <div class="hero-visual">
                 <div class="code-block">
-
-<pre><code>
-const noor = {
-  name: "Noor",
-  major: "Computer Engineering",
-  university: "UET Lahore",
-  goal: "Build the Future"
-};
-</code></pre>
-
+                    <div class="dots">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <pre><code><span class="code-blue">const</span> <span class="code-yellow">noor</span> = {<br>  <span class="code-blue">name</span>: <span class="code-green">"Noor"</span>,<br>  <span class="code-blue">major</span>: <span class="code-green">"Computer Engineering"</span>,<br>  <span class="code-blue">university</span>: <span class="code-green">"UET Lahore"</span>,<br>  <span class="code-blue">goal</span>: <span class="code-green">"Build the future"</span><br>};</code></pre>
                 </div>
             </div>
-
-        </div>
-    </section>
-
-    <!-- SKILLS -->
-    <section class="skills">
-        <div class="container">
-
-            <h2>Technical Skills</h2>
-
-            <p>HTML & CSS</p>
-            <div class="progress">
-                <div class="progress-bar html">
-                    90%
-                </div>
-            </div>
-
-            <p>C++</p>
-            <div class="progress">
-                <div class="progress-bar cpp">
-                    85%
-                </div>
-            </div>
-
-            <p>MySQL</p>
-            <div class="progress">
-                <div class="progress-bar sql">
-                    80%
-                </div>
-            </div>
-
-            <p>Python</p>
-            <div class="progress">
-                <div class="progress-bar python">
-                    75%
-                </div>
-            </div>
-
         </div>
     </section>
 
     <!-- FEATURED PROJECT -->
     <section class="featured">
         <div class="container">
-
-            <h2>Featured Project</h2>
-
-            <p>
-                Student Database Management System
-                developed using Python and MySQL.
-            </p>
-
-            <a href="https://github.com/2025-bscpe-145"
-                target="_blank"
-                class="btn-primary">
-                View on GitHub →
-            </a>
-
+            <span class="section-label">⭐ Featured Project</span>
+            <h2>Student Database Management System</h2>
+            <div class="featured-grid">
+                <div class="featured-content">
+                    <p>
+                        A production-ready database system built for managing student records,
+                        course enrollments, and academic data. Designed with <strong>MySQL</strong>
+                        and <strong>Python</strong>.
+                    </p>
+                    <ul class="feature-list">
+                        <li>✅ CRUD operations with CLI interface</li>
+                        <li>✅ Complex JOINs & subqueries</li>
+                        <li>✅ 3NF normalized schema</li>
+                    </ul>
+                    <div class="tech-stack">
+                        <span>Python</span>
+                        <span>MySQL</span>
+                        <span>SQLAlchemy</span>
+                    </div>
+                    <a href="projects.html" class="btn-primary">View on GitHub →</a>
+                </div>
+                <div class="featured-preview">
+                    <div class="mockup">
+                        <div class="mockup-header">
+                            <span>⚡ Query Result</span>
+                        </div>
+                        <div class="mockup-body">
+                            <div class="row">
+                                <span class="key">Student</span>
+                                <span class="value">Ahmed</span>
+                            </div>
+                            <div class="row">
+                                <span class="key">Course</span>
+                                <span class="value">Database Systems</span>
+                            </div>
+                            <div class="row">
+                                <span class="key">Grade</span>
+                                <span class="value highlight">A</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- BLOG -->
+    <!-- BLOG PREVIEW -->
     <section class="blog-preview">
         <div class="container">
-
-            <h2>Latest Writing</h2>
-
+            <span class="section-label">📝 Latest Writing</span>
             <div class="blog-card">
-                <h3>
-                    What I Learned Building My First Database Project
-                </h3>
-
+                <div class="blog-meta">
+                    <span>June 20, 2026</span>
+                    <span>•</span>
+                    <span>3 min read</span>
+                </div>
+                <h3>What I Learned Building My First Database Project</h3>
                 <p>
-                    Designing a relational database from scratch taught
-                    me more than any textbook.
+                    Designing a relational database from scratch taught me more than any textbook.
+                    Here are the 5 lessons that stuck with me...
                 </p>
-
-                <a href="blog.html">
-                    Read More →
-                </a>
+                <a href="blog.html" class="read-link">Read More →</a>
             </div>
-
         </div>
     </section>
 
-    <!-- CONTACT -->
+    <!-- CTA SECTION -->
     <section class="cta">
         <div class="container">
-
-            <h2>
-                Let's Build Something Together
-            </h2>
-
-            <p>
-                I am always open to collaboration and new ideas.
-            </p>
-
-            <a href="contact.html"
-                class="btn-primary">
-                Get In Touch →
-            </a>
-
+            <h2>Let's Build Something <span class="gradient-text">Together</span></h2>
+            <p>I'm always open to new ideas, collaborations, or just a chat.</p>
+            <a href="contact.html" class="btn-primary">Get in Touch →</a>
         </div>
     </section>
 
     <!-- FOOTER -->
     <footer>
-
         <div class="container">
-
-            <h3>Noor.</h3>
-
-            <p>
-                Building the future,
-                one line of code at a time.
-            </p>
-
-            <h4>Connect</h4>
-
-            <p>
-                🐙
-                <a href="https://github.com/2025-bscpe-145"
-                    target="_blank">
-                    GitHub
-                </a>
-            </p>
-
-            <p>
-                💼
-                <a href="#">
-                    LinkedIn
-                </a>
-            </p>
-
-            <p>
-                📧
-                <a href="mailto:noofatima45@gmail.com">
-                    Email
-                </a>
-            </p>
-
-            <hr>
-
-            <p>
-                © 2026 Noor | Computer Engineering Student |
-                UET Lahore Faisalabad Campus
-            </p>
-
+            <div class="footer-grid">
+                <div>
+                    <h3>Noor.</h3>
+                    <p>Building the future, one line of code at a time.</p>
+                </div>
+                <div>
+                    <h4>Navigate</h4>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="blog.html">Writings</a>
+                </div>
+                <div>
+                    <h4>Connect</h4>
+                    <a href="https://github.com/Noor-Fatima.github.io" target="_blank">GitHub</a>
+                    <a href="#">LinkedIn</a>
+                    <a href="mailto:noofatima45@gmail.com">Email</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Noor. Crafted with ☕ and ❤️</p>
+            </div>
         </div>
-
     </footer>
 
-    <!-- JAVASCRIPT -->
+    <!-- Mobile Menu Toggle -->
     <script>
-
-        const hamburger =
-            document.querySelector('.hamburger');
-
-        const navLinks =
-            document.querySelector('.nav-links');
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
 
         hamburger.addEventListener('click', () => {
             navLinks.classList.toggle('open');
         });
-
-        const themeBtn =
-            document.getElementById('theme-toggle');
-
-        themeBtn.addEventListener('click', () => {
-
-            document.body.classList.toggle('light-mode');
-
-            if (
-                document.body.classList.contains('light-mode')
-            ) {
-                themeBtn.innerHTML = "☀️";
-            }
-            else {
-                themeBtn.innerHTML = "🌙";
-            }
-
-        });
-
     </script>
 
 </body>
