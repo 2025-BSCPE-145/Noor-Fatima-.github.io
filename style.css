@@ -146,7 +146,6 @@ body.light-mode footer {
     background: #ffffff;
 }
 
-body.light-mode .code-block,
 body.light-mode .mockup,
 body.light-mode .blog-card {
     background: #ffffff;
@@ -232,22 +231,6 @@ body.light-mode .mockup-body .row {
 
 body.light-mode .mockup-body .value {
     color: #111827;
-}
-
-body.light-mode .code-block pre {
-    color: #1e293b;
-}
-
-body.light-mode .code-block .code-blue {
-    color: #4f46e5;
-}
-
-body.light-mode .code-block .code-green {
-    color: #16a34a;
-}
-
-body.light-mode .code-block .code-yellow {
-    color: #d97706;
 }
 
 /* ========================================
@@ -374,10 +357,6 @@ body.light-mode .hero {
     animation: slideUp 1s ease;
 }
 
-.hero-visual {
-    animation: fadeIn 1.3s ease;
-}
-
 .badge {
     display: inline-block;
     background: rgba(108, 99, 255, 0.12);
@@ -440,41 +419,6 @@ body.light-mode .subtitle .highlight {
 body.light-mode .stats div span {
     color: #111827;
 }
-
-/* ========================================
-   CODE BLOCK (Hero Visual)
-   ======================================== */
-.code-block {
-    background: #111;
-    border-radius: 12px;
-    padding: 24px;
-    border: 1px solid #1e1e1e;
-    font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
-    font-size: 0.85rem;
-    line-height: 1.8;
-    transition: background 0.3s ease, border-color 0.3s ease;
-}
-
-.code-block .dots {
-    display: flex;
-    gap: 6px;
-    margin-bottom: 16px;
-}
-
-.code-block .dot {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-}
-
-.code-block .dot.green { background: #34d399; }
-.code-block .dot.yellow { background: #fbbf24; }
-.code-block .dot.red { background: #f87171; }
-
-.code-blue { color: #6C63FF; }
-.code-yellow { color: #fbbf24; }
-.code-green { color: #34d399; }
-.code-gray { color: #6b7280; }
 
 /* ========================================
    FEATURED PROJECT
@@ -911,15 +855,6 @@ footer {
     .footer-grid {
         grid-template-columns: 1fr;
         text-align: center;
-    }
-
-    .code-block {
-        font-size: 0.7rem;
-        padding: 16px;
-    }
-
-    .code-block pre {
-        overflow-x: auto;
     }
 }
 
