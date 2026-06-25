@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 
-<body>
+<body class="dark-mode">
 
     <!-- NAVBAR -->
     <nav class="navbar">
@@ -30,11 +30,14 @@
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Work</a></li>
+            <li><a href="projects.html">Projects</a></li>
             <li><a href="blog.html">Writings</a></li>
             <li><a href="contact.html" class="nav-cta">Let's Talk</a></li>
         </ul>
-        <button class="hamburger" aria-label="Toggle menu">☰</button>
+        <div style="display: flex; align-items: center; gap: 12px;">
+            <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+            <button class="hamburger" aria-label="Toggle menu">☰</button>
+        </div>
     </nav>
 
     <!-- CONTACT HERO -->
@@ -50,21 +53,20 @@
         </div>
     </section>
 
-    <!-- CONTACT CONTENT -->
+    <!-- CONTENT -->
     <section style="padding: 40px 0 80px;">
         <div class="container" style="max-width: 900px;">
 
-            <!-- Contact Grid -->
+            <!-- Grid -->
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px;">
 
                 <!-- Contact Info -->
                 <div class="card highlight">
                     <h2>📧 Contact Info</h2>
-                    <p style="color: #a0a0a0; margin-bottom: 20px;">
+                    <p style="color: var(--text-secondary, #a0a0a0); margin-bottom: 20px;">
                         Feel free to reach out through any of these platforms.
                     </p>
 
-                    <!-- Email -->
                     <div class="contact-item">
                         <span class="contact-icon">✉️</span>
                         <div>
@@ -73,18 +75,16 @@
                         </div>
                     </div>
 
-                    <!-- GitHub -->
                     <div class="contact-item">
                         <span class="contact-icon">🐙</span>
                         <div>
                             <p style="color: #666; font-size: 0.8rem;">GitHub</p>
                             <a href="https://github.com/Noor-Fatima.github.io" target="_blank">
-                                github.com/Noor-Fatima.github.io
+                                github.com/Noor-Fatima
                             </a>
                         </div>
                     </div>
 
-                    <!-- LinkedIn -->
                     <div class="contact-item">
                         <span class="contact-icon">🔗</span>
                         <div>
@@ -93,45 +93,42 @@
                         </div>
                     </div>
 
-                    <!-- Location -->
                     <div class="contact-item" style="border-bottom: none;">
                         <span class="contact-icon">📍</span>
                         <div>
                             <p style="color: #666; font-size: 0.8rem;">Location</p>
-                            <p style="color: #e5e5e5;">UET Lahore, Faisalabad Campus</p>
+                            <p style="color: var(--text-primary, #e5e5e5);">UET Lahore, Faisalabad Campus</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Contact Form -->
+                <!-- Form -->
                 <div class="card highlight">
                     <h2>✉️ Send a Message</h2>
-                    <p style="color: #a0a0a0; margin-bottom: 20px;">
+                    <p style="color: var(--text-secondary, #a0a0a0); margin-bottom: 20px;">
                         I'll get back to you as soon as possible.
                     </p>
 
                     <form action="#" method="POST" style="display: flex; flex-direction: column; gap: 16px;">
 
-                        <!-- Name -->
                         <div>
-                            <label for="name" style="display: block; color: #c0c0c0; font-size: 0.9rem; margin-bottom: 5px; font-weight: 600;">
-                                Noor Fatma
+                            <label for="name" style="display: block; color: var(--text-secondary, #c0c0c0); font-size: 0.9rem; margin-bottom: 5px; font-weight: 600;">
+                                Your Name
                             </label>
                             <input
                                 type="text"
                                 id="name"
                                 name="name"
-                                placeholder="e.g., Noor Faima "
+                                placeholder="e.g., Ahmed Khan"
                                 required
-                                style="width: 100%; padding: 12px 16px; background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 8px; color: #e5e5e5; font-size: 0.95rem; transition: border 0.3s ease;"
+                                style="width: 100%; padding: 12px 16px; background: var(--card-bg, #1a1a1a); border: 1px solid var(--border-color, #2a2a2a); border-radius: 8px; color: var(--text-primary, #e5e5e5); font-size: 0.95rem; transition: border 0.3s ease;"
                                 onfocus="this.style.borderColor='#6C63FF'"
-                                onblur="this.style.borderColor='#2a2a2a'"
+                                onblur="this.style.borderColor='var(--border-color, #2a2a2a)'"
                             />
                         </div>
 
-                        <!-- Email -->
                         <div>
-                            <label for="email" style="display: block; color: #c0c0c0; font-size: 0.9rem; margin-bottom: 5px; font-weight: 600;">
+                            <label for="email" style="display: block; color: var(--text-secondary, #c0c0c0); font-size: 0.9rem; margin-bottom: 5px; font-weight: 600;">
                                 Your Email
                             </label>
                             <input
@@ -140,15 +137,14 @@
                                 name="email"
                                 placeholder="e.g., ahmed@example.com"
                                 required
-                                style="width: 100%; padding: 12px 16px; background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 8px; color: #e5e5e5; font-size: 0.95rem; transition: border 0.3s ease;"
+                                style="width: 100%; padding: 12px 16px; background: var(--card-bg, #1a1a1a); border: 1px solid var(--border-color, #2a2a2a); border-radius: 8px; color: var(--text-primary, #e5e5e5); font-size: 0.95rem; transition: border 0.3s ease;"
                                 onfocus="this.style.borderColor='#6C63FF'"
-                                onblur="this.style.borderColor='#2a2a2a'"
+                                onblur="this.style.borderColor='var(--border-color, #2a2a2a)'"
                             />
                         </div>
 
-                        <!-- Subject -->
                         <div>
-                            <label for="subject" style="display: block; color: #c0c0c0; font-size: 0.9rem; margin-bottom: 5px; font-weight: 600;">
+                            <label for="subject" style="display: block; color: var(--text-secondary, #c0c0c0); font-size: 0.9rem; margin-bottom: 5px; font-weight: 600;">
                                 Subject
                             </label>
                             <input
@@ -156,15 +152,14 @@
                                 id="subject"
                                 name="subject"
                                 placeholder="e.g., Collaboration Opportunity"
-                                style="width: 100%; padding: 12px 16px; background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 8px; color: #e5e5e5; font-size: 0.95rem; transition: border 0.3s ease;"
+                                style="width: 100%; padding: 12px 16px; background: var(--card-bg, #1a1a1a); border: 1px solid var(--border-color, #2a2a2a); border-radius: 8px; color: var(--text-primary, #e5e5e5); font-size: 0.95rem; transition: border 0.3s ease;"
                                 onfocus="this.style.borderColor='#6C63FF'"
-                                onblur="this.style.borderColor='#2a2a2a'"
+                                onblur="this.style.borderColor='var(--border-color, #2a2a2a)'"
                             />
                         </div>
 
-                        <!-- Message -->
                         <div>
-                            <label for="message" style="display: block; color: #c0c0c0; font-size: 0.9rem; margin-bottom: 5px; font-weight: 600;">
+                            <label for="message" style="display: block; color: var(--text-secondary, #c0c0c0); font-size: 0.9rem; margin-bottom: 5px; font-weight: 600;">
                                 Message
                             </label>
                             <textarea
@@ -173,15 +168,14 @@
                                 rows="5"
                                 placeholder="Write your message here..."
                                 required
-                                style="width: 100%; padding: 12px 16px; background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 8px; color: #e5e5e5; font-size: 0.95rem; resize: vertical; font-family: inherit; transition: border 0.3s ease;"
+                                style="width: 100%; padding: 12px 16px; background: var(--card-bg, #1a1a1a); border: 1px solid var(--border-color, #2a2a2a); border-radius: 8px; color: var(--text-primary, #e5e5e5); font-size: 0.95rem; resize: vertical; font-family: inherit; transition: border 0.3s ease;"
                                 onfocus="this.style.borderColor='#6C63FF'"
-                                onblur="this.style.borderColor='#2a2a2a'"
+                                onblur="this.style.borderColor='var(--border-color, #2a2a2a)'"
                             ></textarea>
                         </div>
 
-                        <!-- Submit Button -->
                         <button type="submit" class="btn-primary" style="width: 100%;">
-                            Send Message 🚀
+                            <span>Send Message 🚀</span>
                         </button>
 
                     </form>
@@ -190,7 +184,7 @@
 
             <!-- Back to Home -->
             <div style="text-align: center; margin-top: 30px;">
-                <a href="index.html" class="btn-secondary">← Back to Home</a>
+                <a href="index.html" class="btn-secondary"><span>← Back to Home</span></a>
             </div>
 
         </div>
@@ -208,7 +202,7 @@
                     <h4>Navigate</h4>
                     <a href="index.html">Home</a>
                     <a href="about.html">About</a>
-                    <a href="projects.html">Work</a>
+                    <a href="projects.html">Projects</a>
                     <a href="blog.html">Writings</a>
                 </div>
                 <div>
@@ -219,13 +213,28 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>© 2026 Noor</p>
+                <p>© 2026 Noor. Crafted with ☕ and ❤️</p>
             </div>
         </div>
     </footer>
 
-    <!-- Mobile Menu Toggle -->
+    <!-- Theme Toggle & Mobile Menu -->
     <script>
+        const themeToggle = document.getElementById('theme-toggle');
+        const body = document.body;
+
+        themeToggle.addEventListener('click', () => {
+            if (body.classList.contains('dark-mode')) {
+                body.classList.remove('dark-mode');
+                body.classList.add('light-mode');
+                themeToggle.textContent = '☀️';
+            } else {
+                body.classList.remove('light-mode');
+                body.classList.add('dark-mode');
+                themeToggle.textContent = '🌙';
+            }
+        });
+
         const hamburger = document.querySelector('.hamburger');
         const navLinks = document.querySelector('.nav-links');
 
