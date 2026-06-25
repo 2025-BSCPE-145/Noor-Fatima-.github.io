@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 
-<body>
+<body class="dark-mode">
 
     <!-- NAVBAR -->
     <nav class="navbar">
@@ -34,7 +34,10 @@
             <li><a href="blog.html">Writings</a></li>
             <li><a href="contact.html" class="nav-cta">Let's Talk</a></li>
         </ul>
-        <button class="hamburger" aria-label="Toggle menu">☰</button>
+        <div style="display: flex; align-items: center; gap: 12px;">
+            <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+            <button class="hamburger" aria-label="Toggle menu">☰</button>
+        </div>
     </nav>
 
     <!-- HERO SECTION -->
@@ -49,8 +52,8 @@
                     <strong>databases</strong>, and <strong>web development</strong>.
                 </p>
                 <div class="hero-buttons" style="justify-content: center;">
-                    <a href="projects.html" class="btn-primary">View My Projects →</a>
-                    <a href="about.html" class="btn-secondary">About Me</a>
+                    <a href="projects.html" class="btn-primary"><span>View My Projects →</span></a>
+                    <a href="about.html" class="btn-secondary"><span>About Me</span></a>
                 </div>
                 <div class="stats" style="justify-content: center;">
                     <div><span>3+</span> Projects</div>
@@ -83,7 +86,7 @@
                         <span>MySQL</span>
                         <span>SQLAlchemy</span>
                     </div>
-                    <a href="projects.html" class="btn-primary">View on GitHub →</a>
+                    <a href="projects.html" class="btn-primary"><span>View on GitHub →</span></a>
                 </div>
                 <div class="featured-preview">
                     <div class="mockup">
@@ -135,7 +138,7 @@
         <div class="container">
             <h2>Let's Build Something <span class="gradient-text">Together</span></h2>
             <p>I'm always open to new ideas, collaborations, or just a chat.</p>
-            <a href="contact.html" class="btn-primary">Get in Touch →</a>
+            <a href="contact.html" class="btn-primary"><span>Get in Touch →</span></a>
         </div>
     </section>
 
@@ -167,8 +170,25 @@
         </div>
     </footer>
 
-    <!-- Mobile Menu Toggle -->
+    <!-- Theme Toggle & Mobile Menu -->
     <script>
+        // Theme Toggle
+        const themeToggle = document.getElementById('theme-toggle');
+        const body = document.body;
+
+        themeToggle.addEventListener('click', () => {
+            if (body.classList.contains('dark-mode')) {
+                body.classList.remove('dark-mode');
+                body.classList.add('light-mode');
+                themeToggle.textContent = '☀️';
+            } else {
+                body.classList.remove('light-mode');
+                body.classList.add('dark-mode');
+                themeToggle.textContent = '🌙';
+            }
+        });
+
+        // Mobile Menu Toggle
         const hamburger = document.querySelector('.hamburger');
         const navLinks = document.querySelector('.nav-links');
 
