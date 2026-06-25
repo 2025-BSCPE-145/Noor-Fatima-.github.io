@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 
-<body>
+<body class="dark-mode">
 
     <!-- NAVBAR -->
     <nav class="navbar">
@@ -30,11 +30,14 @@
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Work</a></li>
+            <li><a href="projects.html">Projects</a></li>
             <li><a href="blog.html" class="active">Writings</a></li>
             <li><a href="contact.html" class="nav-cta">Let's Talk</a></li>
         </ul>
-        <button class="hamburger" aria-label="Toggle menu">☰</button>
+        <div style="display: flex; align-items: center; gap: 12px;">
+            <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+            <button class="hamburger" aria-label="Toggle menu">☰</button>
+        </div>
     </nav>
 
     <!-- BLOG HERO -->
@@ -45,7 +48,7 @@
                 <h1>Thoughts & <span class="gradient-text">Learnings</span></h1>
                 <p class="subtitle" style="max-width: 100%;">
                     A collection of my personal experiences, academic reflections, and learning journey
-                    as a Computer Engineering student.
+                    as a Computer Engineering student at UET Lahore, Faisalabad Campus.
                 </p>
             </div>
         </div>
@@ -58,7 +61,7 @@
             <!-- Featured Post -->
             <div class="card highlight" style="margin-bottom: 30px; border-left: 4px solid #f59e0b;">
                 <span class="project-tag" style="background: #f59e0b; color: #0f172a;">⭐ Featured</span>
-                <h2><a href="blog/post10.html" style="color: #fff; text-decoration: none;">My Goals as a Future Computer Engineer</a></h2>
+                <h2 style="margin-top: 8px;"><a href="blog/post10.html" style="color: #fff; text-decoration: none;">My Goals as a Future Computer Engineer</a></h2>
                 <div class="blog-meta">
                     <span>📅 June 22, 2026</span>
                     <span>•</span>
@@ -66,7 +69,7 @@
                     <span>•</span>
                     <span>🏷️ Career</span>
                 </div>
-                <p style="color: #a0a0a0; margin: 10px 0;">
+                <p style="color: var(--text-secondary, #a0a0a0); margin: 10px 0;">
                     My long-term vision and career aspirations in tech. From AI to full-stack development,
                     here's how I plan to shape my future as an engineer.
                 </p>
@@ -84,198 +87,9 @@
                         <span>•</span>
                         <span>⏱️ 3 min read</span>
                     </div>
-                    <p style="color: #a0a0a0; font-size: 0.95rem;">
+                    <p style="color: var(--text-secondary, #a0a0a0); font-size: 0.95rem;">
                         My motivation behind building a personal portfolio and showcasing my work online.
+                        Why every CS/CE student needs a digital presence.
                     </p>
                     <div style="margin-top: 12px; display: flex; gap: 8px; flex-wrap: wrap;">
-                        <span style="background: #1a1a1a; padding: 2px 12px; border-radius: 50px; font-size: 0.7rem; color: #666; border: 1px solid #2a2a2a;">Portfolio</span>
-                    </div>
-                    <a href="blog/post1.html" class="read-link" style="font-weight: 600; font-size: 0.9rem; display: inline-block; margin-top: 10px;">Read More →</a>
-                </div>
-
-                <!-- Post 2 -->
-                <div class="card">
-                    <h3 style="color: #fff; font-size: 1.15rem;"><a href="blog/post2.html" style="color: #fff; text-decoration: none;">The Chaos of Final Exam Week</a></h3>
-                    <div class="blog-meta">
-                        <span>📅 June 18, 2026</span>
-                        <span>•</span>
-                        <span>⏱️ 5 min read</span>
-                    </div>
-                    <p style="color: #a0a0a0; font-size: 0.95rem;">
-                        How I manage stress, deadlines, and pressure during exams. Practical tips that work.
-                    </p>
-                    <div style="margin-top: 12px; display: flex; gap: 8px; flex-wrap: wrap;">
-                        <span style="background: #1a1a1a; padding: 2px 12px; border-radius: 50px; font-size: 0.7rem; color: #666; border: 1px solid #2a2a2a;">Student Life</span>
-                    </div>
-                    <a href="blog/post2.html" class="read-link" style="font-weight: 600; font-size: 0.9rem; display: inline-block; margin-top: 10px;">Read More →</a>
-                </div>
-
-                <!-- Post 3 -->
-                <div class="card">
-                    <h3 style="color: #fff; font-size: 1.15rem;"><a href="blog/post3.html" style="color: #fff; text-decoration: none;">My Journey in Programming Fundamentals</a></h3>
-                    <div class="blog-meta">
-                        <span>📅 June 15, 2026</span>
-                        <span>•</span>
-                        <span>⏱️ 4 min read</span>
-                    </div>
-                    <p style="color: #a0a0a0; font-size: 0.95rem;">
-                        From writing my first "Hello World" in C++ to solving complex problems.
-                    </p>
-                    <div style="margin-top: 12px; display: flex; gap: 8px; flex-wrap: wrap;">
-                        <span style="background: #1a1a1a; padding: 2px 12px; border-radius: 50px; font-size: 0.7rem; color: #666; border: 1px solid #2a2a2a;">Programming</span>
-                    </div>
-                    <a href="blog/post3.html" class="read-link" style="font-weight: 600; font-size: 0.9rem; display: inline-block; margin-top: 10px;">Read More →</a>
-                </div>
-
-                <!-- Post 4 -->
-                <div class="card">
-                    <h3 style="color: #fff; font-size: 1.15rem;"><a href="blog/post4.html" style="color: #fff; text-decoration: none;">What I Learned from Database Systems</a></h3>
-                    <div class="blog-meta">
-                        <span>📅 June 12, 2026</span>
-                        <span>•</span>
-                        <span>⏱️ 3 min read</span>
-                    </div>
-                    <p style="color: #a0a0a0; font-size: 0.95rem;">
-                        Understanding SQL, relational databases, normalization, and data organization.
-                    </p>
-                    <div style="margin-top: 12px; display: flex; gap: 8px; flex-wrap: wrap;">
-                        <span style="background: #1a1a1a; padding: 2px 12px; border-radius: 50px; font-size: 0.7rem; color: #666; border: 1px solid #2a2a2a;">Databases</span>
-                    </div>
-                    <a href="blog/post4.html" class="read-link" style="font-weight: 600; font-size: 0.9rem; display: inline-block; margin-top: 10px;">Read More →</a>
-                </div>
-
-                <!-- Post 5 -->
-                <div class="card">
-                    <h3 style="color: #fff; font-size: 1.15rem;"><a href="blog/post5.html" style="color: #fff; text-decoration: none;">Importance of Time Management</a></h3>
-                    <div class="blog-meta">
-                        <span>📅 June 10, 2026</span>
-                        <span>•</span>
-                        <span>⏱️ 3 min read</span>
-                    </div>
-                    <p style="color: #a0a0a0; font-size: 0.95rem;">
-                        How planning my schedule improved my academic performance and reduced stress.
-                    </p>
-                    <div style="margin-top: 12px; display: flex; gap: 8px; flex-wrap: wrap;">
-                        <span style="background: #1a1a1a; padding: 2px 12px; border-radius: 50px; font-size: 0.7rem; color: #666; border: 1px solid #2a2a2a;">Productivity</span>
-                    </div>
-                    <a href="blog/post5.html" class="read-link" style="font-weight: 600; font-size: 0.9rem; display: inline-block; margin-top: 10px;">Read More →</a>
-                </div>
-
-                <!-- Post 6 -->
-                <div class="card">
-                    <h3 style="color: #fff; font-size: 1.15rem;"><a href="blog/post6.html" style="color: #fff; text-decoration: none;">How Taking Notes Helped Me</a></h3>
-                    <div class="blog-meta">
-                        <span>📅 June 8, 2026</span>
-                        <span>•</span>
-                        <span>⏱️ 3 min read</span>
-                    </div>
-                    <p style="color: #a0a0a0; font-size: 0.95rem;">
-                        Effective note-taking strategies for better understanding and revision.
-                    </p>
-                    <div style="margin-top: 12px; display: flex; gap: 8px; flex-wrap: wrap;">
-                        <span style="background: #1a1a1a; padding: 2px 12px; border-radius: 50px; font-size: 0.7rem; color: #666; border: 1px solid #2a2a2a;">Study Tips</span>
-                    </div>
-                    <a href="blog/post6.html" class="read-link" style="font-weight: 600; font-size: 0.9rem; display: inline-block; margin-top: 10px;">Read More →</a>
-                </div>
-
-                <!-- Post 7 -->
-                <div class="card">
-                    <h3 style="color: #fff; font-size: 1.15rem;"><a href="blog/post7.html" style="color: #fff; text-decoration: none;">Balancing Assignments and Quizzes</a></h3>
-                    <div class="blog-meta">
-                        <span>📅 June 5, 2026</span>
-                        <span>•</span>
-                        <span>⏱️ 4 min read</span>
-                    </div>
-                    <p style="color: #a0a0a0; font-size: 0.95rem;">
-                        Tips on managing coursework without feeling overwhelmed.
-                    </p>
-                    <div style="margin-top: 12px; display: flex; gap: 8px; flex-wrap: wrap;">
-                        <span style="background: #1a1a1a; padding: 2px 12px; border-radius: 50px; font-size: 0.7rem; color: #666; border: 1px solid #2a2a2a;">Student Life</span>
-                    </div>
-                    <a href="blog/post7.html" class="read-link" style="font-weight: 600; font-size: 0.9rem; display: inline-block; margin-top: 10px;">Read More →</a>
-                </div>
-
-                <!-- Post 8 -->
-                <div class="card">
-                    <h3 style="color: #fff; font-size: 1.15rem;"><a href="blog/post8.html" style="color: #fff; text-decoration: none;">Lessons Learned This Semester</a></h3>
-                    <div class="blog-meta">
-                        <span>📅 June 3, 2026</span>
-                        <span>•</span>
-                        <span>⏱️ 5 min read</span>
-                    </div>
-                    <p style="color: #a0a0a0; font-size: 0.95rem;">
-                        Key takeaways from my academic journey so far.
-                    </p>
-                    <div style="margin-top: 12px; display: flex; gap: 8px; flex-wrap: wrap;">
-                        <span style="background: #1a1a1a; padding: 2px 12px; border-radius: 50px; font-size: 0.7rem; color: #666; border: 1px solid #2a2a2a;">Reflection</span>
-                    </div>
-                    <a href="blog/post8.html" class="read-link" style="font-weight: 600; font-size: 0.9rem; display: inline-block; margin-top: 10px;">Read More →</a>
-                </div>
-
-                <!-- Post 9 -->
-                <div class="card">
-                    <h3 style="color: #fff; font-size: 1.15rem;"><a href="blog/post9.html" style="color: #fff; text-decoration: none;">Building My Digital Footprint</a></h3>
-                    <div class="blog-meta">
-                        <span>📅 June 1, 2026</span>
-                        <span>•</span>
-                        <span>⏱️ 3 min read</span>
-                    </div>
-                    <p style="color: #a0a0a0; font-size: 0.95rem;">
-                        Why having an online presence matters for future engineers.
-                    </p>
-                    <div style="margin-top: 12px; display: flex; gap: 8px; flex-wrap: wrap;">
-                        <span style="background: #1a1a1a; padding: 2px 12px; border-radius: 50px; font-size: 0.7rem; color: #666; border: 1px solid #2a2a2a;">Career</span>
-                    </div>
-                    <a href="blog/post9.html" class="read-link" style="font-weight: 600; font-size: 0.9rem; display: inline-block; margin-top: 10px;">Read More →</a>
-                </div>
-
-            </div>
-
-            <!-- Back to Home -->
-            <div style="text-align: center; margin-top: 30px;">
-                <a href="index.html" class="btn-secondary">← Back to Home</a>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer>
-        <div class="container">
-            <div class="footer-grid">
-                <div>
-                    <h3>Noor.</h3>
-                    <p>Building the future, one line of code at a time.</p>
-                </div>
-                <div>
-                    <h4>Navigate</h4>
-                    <a href="index.html">Home</a>
-                    <a href="about.html">About</a>
-                    <a href="projects.html">Work</a>
-                    <a href="blog.html">Writings</a>
-                </div>
-                <div>
-                    <h4>Connect</h4>
-                    <a href="https://github.com/Noor-Fatima.github.io" target="_blank">GitHub</a>
-                    <a href="#">LinkedIn</a>
-                    <a href="mailto:noofatima45@gmail.com">Email</a>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>© 2026 Noor. Crafted with ☕ and ❤️</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Mobile Menu Toggle -->
-    <script>
-        const hamburger = document.querySelector('.hamburger');
-        const navLinks = document.querySelector('.nav-links');
-
-        hamburger.addEventListener('click', () => {
-            navLinks.classList.toggle('open');
-        });
-    </script>
-
-</body>
-</html>
+                        <span style="background: var(--card-bg, #1a1a1a); padding: 2px 12px; border-radius: 50px; font-size: 0
