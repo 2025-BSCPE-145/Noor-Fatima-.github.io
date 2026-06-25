@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 
-<body>
+<body class="dark-mode">
 
     <!-- NAVBAR -->
     <nav class="navbar">
@@ -34,7 +34,10 @@
             <li><a href="blog.html">Writings</a></li>
             <li><a href="contact.html" class="nav-cta">Let's Talk</a></li>
         </ul>
-        <button class="hamburger" aria-label="Toggle menu">☰</button>
+        <div style="display: flex; align-items: center; gap: 12px;">
+            <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+            <button class="hamburger" aria-label="Toggle menu">☰</button>
+        </div>
     </nav>
 
     <!-- PROJECTS HERO -->
@@ -59,7 +62,7 @@
             <div class="card project-card highlight" style="margin-bottom: 25px; border-left: 4px solid #f59e0b;">
                 <span class="project-tag" style="background: #f59e0b; color: #0f172a;">⭐ Featured</span>
                 <h2>📊 Student Stress Prediction System</h2>
-                <p style="color: #a0a0a0; margin: 8px 0;">
+                <p style="color: var(--text-secondary, #a0a0a0); margin: 8px 0;">
                     A machine learning-based system that predicts student stress levels
                     using academic performance and behavioral data.
                 </p>
@@ -76,8 +79,8 @@
                     <span>Jupyter</span>
                 </div>
                 <div class="project-links">
-                    <a href="#" class="btn-primary" style="padding: 10px 20px; font-size: 0.85rem;">🔗 View Code</a>
-                    <a href="#" class="btn-secondary" style="padding: 10px 20px; font-size: 0.85rem;">📊 View Demo</a>
+                    <a href="#" class="btn-primary" style="padding: 10px 20px; font-size: 0.85rem;"><span>🔗 View Code</span></a>
+                    <a href="#" class="btn-secondary" style="padding: 10px 20px; font-size: 0.85rem;"><span>📊 View Demo</span></a>
                 </div>
             </div>
 
@@ -85,7 +88,7 @@
             <div class="card project-card" style="margin-bottom: 25px;">
                 <span class="project-tag">🗄️ Database</span>
                 <h2>Student Database Management System</h2>
-                <p style="color: #a0a0a0; margin: 8px 0;">
+                <p style="color: var(--text-secondary, #a0a0a0); margin: 8px 0;">
                     A fully functional database system for managing students, courses, and enrollments.
                 </p>
                 <ul class="feature-list">
@@ -100,7 +103,7 @@
                     <span>Git</span>
                 </div>
                 <div class="project-links">
-                    <a href="#" class="btn-primary" style="padding: 10px 20px; font-size: 0.85rem;">🔗 View Code</a>
+                    <a href="#" class="btn-primary" style="padding: 10px 20px; font-size: 0.85rem;"><span>🔗 View Code</span></a>
                 </div>
             </div>
 
@@ -111,7 +114,7 @@
                 <div class="card project-card">
                     <span class="project-tag">💻 C++</span>
                     <h2>Programming Fundamentals Projects</h2>
-                    <p style="color: #a0a0a0; margin: 8px 0;">
+                    <p style="color: var(--text-secondary, #a0a0a0); margin: 8px 0;">
                         C++ assignments covering core concepts with real-world applications.
                     </p>
                     <ul class="feature-list">
@@ -125,7 +128,7 @@
                         <span>GCC</span>
                     </div>
                     <div class="project-links">
-                        <a href="#" class="btn-primary" style="padding: 10px 20px; font-size: 0.85rem;">🔗 View Code</a>
+                        <a href="#" class="btn-primary" style="padding: 10px 20px; font-size: 0.85rem;"><span>🔗 View Code</span></a>
                     </div>
                 </div>
 
@@ -133,7 +136,7 @@
                 <div class="card project-card">
                     <span class="project-tag">🧠 C#</span>
                     <h2>Object-Oriented Programming (OOP)</h2>
-                    <p style="color: #a0a0a0; margin: 8px 0;">
+                    <p style="color: var(--text-secondary, #a0a0a0); margin: 8px 0;">
                         C# projects demonstrating advanced OOP concepts with practical examples.
                     </p>
                     <ul class="feature-list">
@@ -148,7 +151,7 @@
                         <span>Visual Studio</span>
                     </div>
                     <div class="project-links">
-                        <a href="#" class="btn-primary" style="padding: 10px 20px; font-size: 0.85rem;">🔗 View Code</a>
+                        <a href="#" class="btn-primary" style="padding: 10px 20px; font-size: 0.85rem;"><span>🔗 View Code</span></a>
                     </div>
                 </div>
 
@@ -156,7 +159,7 @@
                 <div class="card project-card">
                     <span class="project-tag">🔌 Hardware</span>
                     <h2>Digital Logic Design Projects</h2>
-                    <p style="color: #a0a0a0; margin: 8px 0;">
+                    <p style="color: var(--text-secondary, #a0a0a0); margin: 8px 0;">
                         Implementation of combinational and sequential circuits.
                     </p>
                     <ul class="feature-list">
@@ -171,7 +174,7 @@
                         <span>Verilog</span>
                     </div>
                     <div class="project-links">
-                        <a href="#" class="btn-primary" style="padding: 10px 20px; font-size: 0.85rem;">🔗 View Code</a>
+                        <a href="#" class="btn-primary" style="padding: 10px 20px; font-size: 0.85rem;"><span>🔗 View Code</span></a>
                     </div>
                 </div>
 
@@ -179,7 +182,7 @@
                 <div class="card project-card highlight" style="border-left: 4px solid #6C63FF;">
                     <span class="project-tag">🌐 Web</span>
                     <h2>This Portfolio Website</h2>
-                    <p style="color: #a0a0a0; margin: 8px 0;">
+                    <p style="color: var(--text-secondary, #a0a0a0); margin: 8px 0;">
                         Personal portfolio and blog built from scratch to showcase my learning journey.
                     </p>
                     <ul class="feature-list">
@@ -194,7 +197,7 @@
                         <span>VS Code</span>
                     </div>
                     <div class="project-links">
-                        <a href="index.html" class="btn-primary" style="padding: 10px 20px; font-size: 0.85rem;">🌐 Live Site</a>
+                        <a href="index.html" class="btn-primary" style="padding: 10px 20px; font-size: 0.85rem;"><span>🌐 Live Site</span></a>
                     </div>
                 </div>
 
@@ -204,32 +207,32 @@
             <div class="card highlight" style="margin-top: 25px; border-left: 4px solid #38bdf8;">
                 <span class="project-tag" style="background: #38bdf8; color: #0f172a;">🚀 Roadmap</span>
                 <h2>Future Projects</h2>
-                <p style="color: #a0a0a0; margin: 8px 0;">
+                <p style="color: var(--text-secondary, #a0a0a0); margin: 8px 0;">
                     Here's what I'm planning to build next:
                 </p>
                 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 15px;">
-                    <div style="background: #1a1a1a; padding: 15px; border-radius: 8px; border: 1px solid #2a2a2a;">
+                    <div style="background: var(--card-bg, #1a1a1a); padding: 15px; border-radius: 8px; border: 1px solid var(--border-color, #2a2a2a);">
                         <p style="color: #fff; font-weight: 600;">🤖 AI Health Prediction</p>
-                        <p style="color: #666; font-size: 0.85rem;">Starting: July 2026</p>
+                        <p style="color: var(--text-secondary, #666); font-size: 0.85rem;">Starting: July 2026</p>
                     </div>
-                    <div style="background: #1a1a1a; padding: 15px; border-radius: 8px; border: 1px solid #2a2a2a;">
+                    <div style="background: var(--card-bg, #1a1a1a); padding: 15px; border-radius: 8px; border: 1px solid var(--border-color, #2a2a2a);">
                         <p style="color: #fff; font-weight: 600;">🌐 Full Stack Blog Platform</p>
-                        <p style="color: #666; font-size: 0.85rem;">React + Node.js + MongoDB</p>
+                        <p style="color: var(--text-secondary, #666); font-size: 0.85rem;">React + Node.js + MongoDB</p>
                     </div>
-                    <div style="background: #1a1a1a; padding: 15px; border-radius: 8px; border: 1px solid #2a2a2a;">
+                    <div style="background: var(--card-bg, #1a1a1a); padding: 15px; border-radius: 8px; border: 1px solid var(--border-color, #2a2a2a);">
                         <p style="color: #fff; font-weight: 600;">📱 Student Management App</p>
-                        <p style="color: #666; font-size: 0.85rem;">Flutter mobile app</p>
+                        <p style="color: var(--text-secondary, #666); font-size: 0.85rem;">Flutter mobile app</p>
                     </div>
-                    <div style="background: #1a1a1a; padding: 15px; border-radius: 8px; border: 1px solid #2a2a2a;">
+                    <div style="background: var(--card-bg, #1a1a1a); padding: 15px; border-radius: 8px; border: 1px solid var(--border-color, #2a2a2a);">
                         <p style="color: #fff; font-weight: 600;">🧠 ML Portfolio</p>
-                        <p style="color: #666; font-size: 0.85rem;">5+ ML models with deployment</p>
+                        <p style="color: var(--text-secondary, #666); font-size: 0.85rem;">5+ ML models with deployment</p>
                     </div>
                 </div>
             </div>
 
             <!-- Back to Home -->
             <div style="text-align: center; margin-top: 30px;">
-                <a href="index.html" class="btn-secondary">← Back to Home</a>
+                <a href="index.html" class="btn-secondary"><span>← Back to Home</span></a>
             </div>
 
         </div>
@@ -263,8 +266,23 @@
         </div>
     </footer>
 
-    <!-- Mobile Menu Toggle -->
+    <!-- Theme Toggle & Mobile Menu -->
     <script>
+        const themeToggle = document.getElementById('theme-toggle');
+        const body = document.body;
+
+        themeToggle.addEventListener('click', () => {
+            if (body.classList.contains('dark-mode')) {
+                body.classList.remove('dark-mode');
+                body.classList.add('light-mode');
+                themeToggle.textContent = '☀️';
+            } else {
+                body.classList.remove('light-mode');
+                body.classList.add('dark-mode');
+                themeToggle.textContent = '🌙';
+            }
+        });
+
         const hamburger = document.querySelector('.hamburger');
         const navLinks = document.querySelector('.nav-links');
 
