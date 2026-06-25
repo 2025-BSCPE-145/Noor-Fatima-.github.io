@@ -4,16 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>About Me | Noor</title>
+    <title>Projects | Noor</title>
 
     <!-- SEO -->
-    <meta name="description" content="About Noor, Computer Engineering student at UET Faisalabad Campus." />
-    <meta name="keywords" content="Noor, Computer Engineering, UET Faisalabad, About, Portfolio" />
+    <meta name="description" content="Projects by Noor, Computer Engineering student at UET Faisalabad Campus." />
+    <meta name="keywords" content="Noor, Computer Engineering, UET Faisalabad, Projects, Portfolio" />
     <meta name="author" content="Noor" />
 
     <!-- Open Graph -->
-    <meta property="og:title" content="About Me | Noor" />
-    <meta property="og:description" content="Computer Engineering student portfolio and blog" />
+    <meta property="og:title" content="Projects | Noor" />
+    <meta property="og:description" content="Computer Engineering student portfolio and projects" />
     <meta property="og:type" content="website" />
 
     <!-- Google Font -->
@@ -22,166 +22,217 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 
-<body>
+<body class="dark-mode">
 
     <!-- NAVBAR -->
     <nav class="navbar">
         <div class="logo">Noor.</div>
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
-            <li><a href="about.html" class="active">About</a></li>
-            <li><a href="projects.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html" class="active">Projects</a></li>
             <li><a href="blog.html">Writings</a></li>
             <li><a href="contact.html" class="nav-cta">Let's Talk</a></li>
         </ul>
-        <button class="hamburger" aria-label="Toggle menu">☰</button>
+        <div style="display: flex; align-items: center; gap: 12px;">
+            <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+            <button class="hamburger" aria-label="Toggle menu">☰</button>
+        </div>
     </nav>
 
-    <!-- ABOUT HERO -->
+    <!-- PROJECTS HERO -->
     <section class="hero">
         <div class="hero-container" style="grid-template-columns: 1fr; text-align: center; max-width: 800px;">
             <div class="hero-text">
-                <span class="badge">👤 About Me</span>
-                <h1>Know Me <span class="gradient-text">Better</span></h1>
+                <span class="badge">💼 My Projects</span>
+                <h1>Projects I've <span class="gradient-text">Built</span></h1>
                 <p class="subtitle" style="max-width: 100%;">
-                    Computer Engineering student at <strong>UET Lahore, Faisalabad Campus</strong>.
-                    Passionate about building technology that makes a difference.
+                    Academic and personal projects developed during my
+                    Computer Engineering studies at UET Lahore, Faisalabad Campus.
                 </p>
             </div>
         </div>
     </section>
 
-    <!-- ABOUT CONTENT -->
+    <!-- PROJECTS GRID -->
     <section style="padding: 40px 0 80px;">
-        <div class="container" style="max-width: 900px;">
+        <div class="container">
 
-            <!-- Bio -->
-            <div class="card" style="margin-bottom: 30px;">
-                <h2>📍 Who Am I?</h2>
-                <p style="color: #a0a0a0; font-size: 1.05rem;">
-                    Hello! My name is <strong>Noor</strong>, and I am a Computer Engineering
-                    student at <strong>UET Lahore, Faisalabad Campus</strong>. I am passionate
-                    about technology and enjoy learning new concepts in
-                    programming and software development.
+            <!-- Project 1 - Featured -->
+            <div class="card project-card highlight" style="margin-bottom: 25px; border-left: 4px solid #f59e0b;">
+                <span class="project-tag" style="background: #f59e0b; color: #0f172a;">⭐ Featured</span>
+                <h2>📊 Student Stress Prediction System</h2>
+                <p style="color: var(--text-secondary, #a0a0a0); margin: 8px 0;">
+                    A machine learning-based system that predicts student stress levels
+                    using academic performance and behavioral data.
                 </p>
-                <p style="color: #a0a0a0; margin-top: 15px;">
-                    Throughout my academic journey, I have developed a strong
-                    interest in Programming Fundamentals, Database Systems,
-                    Artificial Intelligence, and Machine Learning. I enjoy
-                    solving problems and building projects that improve my
-                    practical skills.
-                </p>
-                <p style="color: #a0a0a0; margin-top: 15px;">
-                    This website is my digital footprint where I document my
-                    learning experiences, projects, achievements, and lessons
-                    learned during my university life.
-                </p>
-                <p style="color: #a0a0a0; margin-top: 15px; border-left: 3px solid #6C63FF; padding-left: 16px;">
-                    💡 The idea of maintaining this portfolio was inspired by my
-                    professor, <strong>Dr. Bilal Ahmad</strong>, who encouraged students to
-                    share their knowledge publicly and build a professional
-                    online presence. His work in Artificial Intelligence and
-                    Machine Learning has motivated me to explore these fields
-                    further.
-                </p>
-            </div>
-
-            <!-- Education + Skills Grid -->
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 25px; margin-bottom: 30px;">
-
-                <!-- Education -->
-                <div class="card highlight">
-                    <h2>🎓 Education</h2>
-                    <div style="margin-top: 10px;">
-                        <h3 style="color: #fff; font-size: 1.1rem;">BSCPE (Computer Engineering)</h3>
-                        <p style="color: #6C63FF; font-weight: 600;">UET Lahore, Faisalabad Campus</p>
-                        <p style="color: #a0a0a0; font-size: 0.9rem;">2025 – 2029 (Expected)</p>
-                        <ul style="margin-top: 12px;">
-                            <li>📘 Programming Fundamentals</li>
-                            <li>📘 Database Systems</li>
-                            <li>📘 Data Structures</li>
-                            <li>📘 Digital Logic Design</li>
-                        </ul>
-                    </div>
+                <ul class="feature-list">
+                    <li>✅ Preprocessed 500+ student records (cleaned & normalized)</li>
+                    <li>✅ Built a Random Forest classifier with <strong style="color: #34d399;">85% accuracy</strong></li>
+                    <li>✅ Visualized feature importance and stress patterns</li>
+                </ul>
+                <div class="tech-stack">
+                    <span>Python</span>
+                    <span>Pandas</span>
+                    <span>Scikit-learn</span>
+                    <span>Matplotlib</span>
+                    <span>Jupyter</span>
                 </div>
-
-                <!-- Skills -->
-                <div class="card highlight">
-                    <h2>🛠️ Skills</h2>
-                    <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 15px;">
-                        <span class="tech-stack"><span style="background: #1a1a1a; padding: 6px 16px; border-radius: 50px; font-size: 0.85rem; border: 1px solid #2a2a2a; color: #c0c0c0;">C++</span></span>
-                        <span class="tech-stack"><span style="background: #1a1a1a; padding: 6px 16px; border-radius: 50px; font-size: 0.85rem; border: 1px solid #2a2a2a; color: #c0c0c0;">C#</span></span>
-                        <span class="tech-stack"><span style="background: #1a1a1a; padding: 6px 16px; border-radius: 50px; font-size: 0.85rem; border: 1px solid #2a2a2a; color: #c0c0c0;">Python</span></span>
-                        <span class="tech-stack"><span style="background: #1a1a1a; padding: 6px 16px; border-radius: 50px; font-size: 0.85rem; border: 1px solid #2a2a2a; color: #c0c0c0;">SQL</span></span>
-                        <span class="tech-stack"><span style="background: #1a1a1a; padding: 6px 16px; border-radius: 50px; font-size: 0.85rem; border: 1px solid #2a2a2a; color: #c0c0c0;">HTML</span></span>
-                        <span class="tech-stack"><span style="background: #1a1a1a; padding: 6px 16px; border-radius: 50px; font-size: 0.85rem; border: 1px solid #2a2a2a; color: #c0c0c0;">CSS</span></span>
-                        <span class="tech-stack"><span style="background: #1a1a1a; padding: 6px 16px; border-radius: 50px; font-size: 0.85rem; border: 1px solid #2a2a2a; color: #c0c0c0;">Git</span></span>
-                        <span class="tech-stack"><span style="background: #1a1a1a; padding: 6px 16px; border-radius: 50px; font-size: 0.85rem; border: 1px solid #2a2a2a; color: #c0c0c0;">GitHub</span></span>
-                    </div>
+                <div class="project-links">
+                    <a href="#" class="btn-primary" style="padding: 10px 20px; font-size: 0.85rem;"><span>🔗 View Code</span></a>
+                    <a href="#" class="btn-secondary" style="padding: 10px 20px; font-size: 0.85rem;"><span>📊 View Demo</span></a>
                 </div>
             </div>
 
-            <!-- Goals -->
-            <div class="card highlight" style="margin-bottom: 30px;">
-                <h2>🎯 My Goals</h2>
-                <p style="color: #a0a0a0; font-size: 1.05rem;">
-                    My goal is to become a skilled <strong>software engineer</strong> and
-                    continue learning about <strong>Artificial Intelligence</strong>,
-                    <strong>Machine Learning</strong>, and modern software technologies.
-                    I believe that continuous learning and practical
-                    experience are the keys to success in engineering.
+            <!-- Project 2 -->
+            <div class="card project-card" style="margin-bottom: 25px;">
+                <span class="project-tag">🗄️ Database</span>
+                <h2>Student Database Management System</h2>
+                <p style="color: var(--text-secondary, #a0a0a0); margin: 8px 0;">
+                    A fully functional database system for managing students, courses, and enrollments.
                 </p>
-                <div style="margin-top: 15px; display: flex; gap: 10px; flex-wrap: wrap;">
-                    <span style="background: rgba(108, 99, 255, 0.12); color: #6C63FF; padding: 6px 16px; border-radius: 50px; font-size: 0.85rem;">🤖 AI/ML</span>
-                    <span style="background: rgba(108, 99, 255, 0.12); color: #6C63FF; padding: 6px 16px; border-radius: 50px; font-size: 0.85rem;">🌐 Full Stack</span>
-                    <span style="background: rgba(108, 99, 255, 0.12); color: #6C63FF; padding: 6px 16px; border-radius: 50px; font-size: 0.85rem;">📊 Data Science</span>
-                    <span style="background: rgba(108, 99, 255, 0.12); color: #6C63FF; padding: 6px 16px; border-radius: 50px; font-size: 0.85rem;">☁️ Cloud Computing</span>
+                <ul class="feature-list">
+                    <li>✅ Designed normalized schema (3NF) with 8+ tables</li>
+                    <li>✅ Implemented complex JOINs, subqueries, and aggregate functions</li>
+                    <li>✅ Built Python CLI for CRUD operations</li>
+                </ul>
+                <div class="tech-stack">
+                    <span>MySQL</span>
+                    <span>Python</span>
+                    <span>SQLAlchemy</span>
+                    <span>Git</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" class="btn-primary" style="padding: 10px 20px; font-size: 0.85rem;"><span>🔗 View Code</span></a>
                 </div>
             </div>
 
-            <!-- Timeline / Journey -->
-            <div class="card highlight" style="margin-bottom: 30px;">
-                <h2>📅 My Journey</h2>
-                <div style="margin-top: 15px;">
+            <!-- Projects Grid (2 columns) -->
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 25px;">
 
-                    <div class="timeline-item">
-                        <h4 style="color: #fff;">2025 – Started University</h4>
-                        <p style="color: #a0a0a0; font-size: 0.95rem;">
-                            Began my Computer Engineering journey at UET Lahore, Faisalabad Campus.
-                            Took my first programming course and fell in love with coding.
-                        </p>
+                <!-- Project 3 -->
+                <div class="card project-card">
+                    <span class="project-tag">💻 C++</span>
+                    <h2>Programming Fundamentals Projects</h2>
+                    <p style="color: var(--text-secondary, #a0a0a0); margin: 8px 0;">
+                        C++ assignments covering core concepts with real-world applications.
+                    </p>
+                    <ul class="feature-list">
+                        <li>✅ <strong>Library Management System</strong> – File handling + OOP</li>
+                        <li>✅ <strong>Banking System</strong> – Classes, inheritance, polymorphism</li>
+                        <li>✅ <strong>Data Structures</strong> – Linked lists, stacks, queues</li>
+                    </ul>
+                    <div class="tech-stack">
+                        <span>C++</span>
+                        <span>VS Code</span>
+                        <span>GCC</span>
                     </div>
-
-                    <div class="timeline-item">
-                        <h4 style="color: #fff;">2026 – First Database Project</h4>
-                        <p style="color: #a0a0a0; font-size: 0.95rem;">
-                            Built a Student Database Management System using MySQL and Python.
-                            Learned the power of structured data and complex queries.
-                        </p>
+                    <div class="project-links">
+                        <a href="#" class="btn-primary" style="padding: 10px 20px; font-size: 0.85rem;"><span>🔗 View Code</span></a>
                     </div>
+                </div>
 
-                    <div class="timeline-item">
-                        <h4 style="color: #fff;">2026 – Launched Portfolio</h4>
-                        <p style="color: #a0a0a0; font-size: 0.95rem;">
-                            Created this personal portfolio website to document my learning journey
-                            and share my projects with the world.
-                        </p>
+                <!-- Project 4 -->
+                <div class="card project-card">
+                    <span class="project-tag">🧠 C#</span>
+                    <h2>Object-Oriented Programming (OOP)</h2>
+                    <p style="color: var(--text-secondary, #a0a0a0); margin: 8px 0;">
+                        C# projects demonstrating advanced OOP concepts with practical examples.
+                    </p>
+                    <ul class="feature-list">
+                        <li>✅ <strong>Employee Payroll System</strong> – Inheritance & polymorphism</li>
+                        <li>✅ <strong>Inventory Tracker</strong> – Interfaces, abstraction, collections</li>
+                        <li>✅ <strong>Calculator App</strong> – Event-driven programming</li>
+                    </ul>
+                    <div class="tech-stack">
+                        <span>C#</span>
+                        <span>.NET</span>
+                        <span>Windows Forms</span>
+                        <span>Visual Studio</span>
                     </div>
-
-                    <div class="timeline-item" style="border-left-color: #f59e0b;">
-                        <h4 style="color: #f59e0b;">🚀 Future – AI & ML Exploration</h4>
-                        <p style="color: #a0a0a0; font-size: 0.95rem;">
-                            Planning to dive deeper into Artificial Intelligence and Machine Learning.
-                            Building projects that solve real-world problems.
-                        </p>
+                    <div class="project-links">
+                        <a href="#" class="btn-primary" style="padding: 10px 20px; font-size: 0.85rem;"><span>🔗 View Code</span></a>
                     </div>
+                </div>
 
+                <!-- Project 5 -->
+                <div class="card project-card">
+                    <span class="project-tag">🔌 Hardware</span>
+                    <h2>Digital Logic Design Projects</h2>
+                    <p style="color: var(--text-secondary, #a0a0a0); margin: 8px 0;">
+                        Implementation of combinational and sequential circuits.
+                    </p>
+                    <ul class="feature-list">
+                        <li>✅ <strong>4-bit Adder/Subtractor</strong> – Full adders & multiplexers</li>
+                        <li>✅ <strong>Ring Counter & Johnson Counter</strong> – Flip-flop designs</li>
+                        <li>✅ <strong>Traffic Light Controller</strong> – State machine design</li>
+                    </ul>
+                    <div class="tech-stack">
+                        <span>Logic Gates</span>
+                        <span>Flip-flops</span>
+                        <span>Multisim</span>
+                        <span>Verilog</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn-primary" style="padding: 10px 20px; font-size: 0.85rem;"><span>🔗 View Code</span></a>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="card project-card highlight" style="border-left: 4px solid #6C63FF;">
+                    <span class="project-tag">🌐 Web</span>
+                    <h2>This Portfolio Website</h2>
+                    <p style="color: var(--text-secondary, #a0a0a0); margin: 8px 0;">
+                        Personal portfolio and blog built from scratch to showcase my learning journey.
+                    </p>
+                    <ul class="feature-list">
+                        <li>✅ Fully responsive design with HTML5 & CSS3</li>
+                        <li>✅ Deployed on GitHub Pages</li>
+                        <li>✅ SEO optimized with meta tags and semantic HTML</li>
+                    </ul>
+                    <div class="tech-stack">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>GitHub Pages</span>
+                        <span>VS Code</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="index.html" class="btn-primary" style="padding: 10px 20px; font-size: 0.85rem;"><span>🌐 Live Site</span></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Future Projects -->
+            <div class="card highlight" style="margin-top: 25px; border-left: 4px solid #38bdf8;">
+                <span class="project-tag" style="background: #38bdf8; color: #0f172a;">🚀 Roadmap</span>
+                <h2>Future Projects</h2>
+                <p style="color: var(--text-secondary, #a0a0a0); margin: 8px 0;">
+                    Here's what I'm planning to build next:
+                </p>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 15px;">
+                    <div style="background: var(--card-bg, #1a1a1a); padding: 15px; border-radius: 8px; border: 1px solid var(--border-color, #2a2a2a);">
+                        <p style="color: #fff; font-weight: 600;">🤖 AI Health Prediction</p>
+                        <p style="color: var(--text-secondary, #666); font-size: 0.85rem;">Starting: July 2026</p>
+                    </div>
+                    <div style="background: var(--card-bg, #1a1a1a); padding: 15px; border-radius: 8px; border: 1px solid var(--border-color, #2a2a2a);">
+                        <p style="color: #fff; font-weight: 600;">🌐 Full Stack Blog Platform</p>
+                        <p style="color: var(--text-secondary, #666); font-size: 0.85rem;">React + Node.js + MongoDB</p>
+                    </div>
+                    <div style="background: var(--card-bg, #1a1a1a); padding: 15px; border-radius: 8px; border: 1px solid var(--border-color, #2a2a2a);">
+                        <p style="color: #fff; font-weight: 600;">📱 Student Management App</p>
+                        <p style="color: var(--text-secondary, #666); font-size: 0.85rem;">Flutter mobile app</p>
+                    </div>
+                    <div style="background: var(--card-bg, #1a1a1a); padding: 15px; border-radius: 8px; border: 1px solid var(--border-color, #2a2a2a);">
+                        <p style="color: #fff; font-weight: 600;">🧠 ML Portfolio</p>
+                        <p style="color: var(--text-secondary, #666); font-size: 0.85rem;">5+ ML models with deployment</p>
+                    </div>
                 </div>
             </div>
 
             <!-- Back to Home -->
-            <div style="text-align: center; margin-top: 10px;">
-                <a href="index.html" class="btn-secondary">← Back to Home</a>
+            <div style="text-align: center; margin-top: 30px;">
+                <a href="index.html" class="btn-secondary"><span>← Back to Home</span></a>
             </div>
 
         </div>
@@ -199,7 +250,7 @@
                     <h4>Navigate</h4>
                     <a href="index.html">Home</a>
                     <a href="about.html">About</a>
-                    <a href="projects.html">Work</a>
+                    <a href="projects.html">Projects</a>
                     <a href="blog.html">Writings</a>
                 </div>
                 <div>
@@ -215,8 +266,23 @@
         </div>
     </footer>
 
-    <!-- Mobile Menu Toggle -->
+    <!-- Theme Toggle & Mobile Menu -->
     <script>
+        const themeToggle = document.getElementById('theme-toggle');
+        const body = document.body;
+
+        themeToggle.addEventListener('click', () => {
+            if (body.classList.contains('dark-mode')) {
+                body.classList.remove('dark-mode');
+                body.classList.add('light-mode');
+                themeToggle.textContent = '☀️';
+            } else {
+                body.classList.remove('light-mode');
+                body.classList.add('dark-mode');
+                themeToggle.textContent = '🌙';
+            }
+        });
+
         const hamburger = document.querySelector('.hamburger');
         const navLinks = document.querySelector('.nav-links');
 
